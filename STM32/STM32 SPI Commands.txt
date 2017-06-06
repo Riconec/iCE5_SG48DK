@@ -1,0 +1,9 @@
+SPI commands to be present
+	1) Reset FPGA (make CRESET pin open drain)
+	2) Check CDONE
+	3) Write Byte
+	4) Read Byte
+	5) Init Flash
+	6) Write Block
+	7) Read Block
+	8) Disable Flash
