@@ -5,5 +5,5 @@ SPI commands to be present
 	4) Read Byte
 	5) Init Flash
 	6) Write Block
-	7) Read Block
 	8) Disable Flash
+	9) Read Block
