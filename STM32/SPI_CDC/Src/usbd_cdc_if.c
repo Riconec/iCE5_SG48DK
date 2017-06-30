@@ -75,8 +75,8 @@
 /* USER CODE BEGIN PRIVATE_DEFINES */
 /* Define size for the receive and transmit buffer over CDC */
 /* It's up to user to redefine and/or remove those define */
-#define APP_RX_DATA_SIZE  4
-#define APP_TX_DATA_SIZE  4
+#define APP_RX_DATA_SIZE  64
+#define APP_TX_DATA_SIZE  64
 /* USER CODE END PRIVATE_DEFINES */
 /**
   * @}
@@ -104,6 +104,8 @@ uint8_t UserRxBufferFS[APP_RX_DATA_SIZE];
 uint8_t UserTxBufferFS[APP_TX_DATA_SIZE];
 
 /* USER CODE BEGIN PRIVATE_VARIABLES */
+	extern char cdc_rx_buf[64];
+	extern uint8_t command_received;
 /* USER CODE END PRIVATE_VARIABLES */
 
 /**
@@ -268,6 +270,16 @@ static int8_t CDC_Receive_FS (uint8_t* Buf, uint32_t *Len)
   /* USER CODE BEGIN 6 */
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
+	//strncpy(cdc_rx_buf, (char*) Buf);
+	//strcpy(cdc_rx_buf, (char*) Buf);
+	strcpy(cdc_rx_buf, (char*)UserRxBufferFS);
+	//memset(Buf, '\0', strlen(Buf));
+	memset(UserRxBufferFS, 0, 64);
+	command_received = 1;
+	//HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
+	//HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+	//HAL_Delay(50);
+	//hUsbDeviceFS.
   return (USBD_OK);
   /* USER CODE END 6 */ 
 }
@@ -292,6 +304,9 @@ uint8_t CDC_Transmit_FS(uint8_t* Buf, uint16_t Len)
     return USBD_BUSY;
   }
   USBD_CDC_SetTxBuffer(&hUsbDeviceFS, Buf, Len);
+	//HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
+	HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
+	//HAL_Delay(50);
   result = USBD_CDC_TransmitPacket(&hUsbDeviceFS);
   /* USER CODE END 7 */ 
   return result;

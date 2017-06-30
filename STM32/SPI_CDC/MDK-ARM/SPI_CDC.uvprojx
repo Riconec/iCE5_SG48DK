@@ -51,7 +51,7 @@
           <OutputName>SPI_CDC</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath></ListingPath>
@@ -133,11 +133,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>4107</DriverSelection>
+            <DriverSelection>4103</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>STLink\ST-LINKIII-KEIL_SWO.dll</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -332,7 +332,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>USE_HAL_DRIVER,STM32F070x6</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F0xx_HAL_Driver/Inc;../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy;../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc;../Drivers/CMSIS/Device/ST/STM32F0xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Inc;    ../Drivers/STM32F0xx_HAL_Driver/Inc;    ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy;    ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc;    ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc;    ../Drivers/CMSIS/Device/ST/STM32F0xx/Include;    ../Drivers/CMSIS/Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -396,9 +396,6 @@
               <FilePath>../Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c</FilePath>
             </File>
           </Files>
-        </Group>
-        <Group>
-          <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
           <GroupName>Application/User</GroupName>
@@ -554,6 +551,9 @@
               <FilePath>../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c</FilePath>
             </File>
           </Files>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
     </Target>

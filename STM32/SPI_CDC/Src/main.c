@@ -50,9 +50,14 @@
 #include "stm32f0xx_hal.h"
 #include "usb_device.h"
 
-
 /* USER CODE BEGIN Includes */
-#define BUFF_SIZE 32
+#include "usbd_cdc_if.h"
+//#include "string.h"
+#include <inttypes.h>
+
+#define BUFF_SIZE 40
+#define MIN_COMMAND_LENGTH 11
+
 #define WRITE_ENABLE_CMD 0x06 //+
 #define WRITE_DISABLE_CMD 0x04 //+ 
 #define READ_IDENT_CMD 0x9f //
@@ -65,8 +70,6 @@
 #define BULK_ERASE_CMD 0xc7 // +
 #define DEEP_PWR_DOWN_CMD 0xb9 // +
 #define DEEP_PWR_WAKE_CMD 0xab  //+
-//#include <spi_flash_functions.c>
-
 
 /* USER CODE END Includes */
 
@@ -75,8 +78,89 @@ SPI_HandleTypeDef hspi1;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
-	uint8_t spi_rx_buf[BUFF_SIZE], spi_tx_buf[BUFF_SIZE];
-	uint8_t data_buf[16] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+	char spi_rx_buf[BUFF_SIZE], spi_tx_buf[BUFF_SIZE];
+	char cdc_rx_buf[64];
+	uint8_t command_received = 0;
+	
+	char data_buf[64] = "";
+	
+	unsigned int int_temp = 255;
+	unsigned int address_page = 0;
+	
+	const char FLASH_WAKE_COMMAND[] = "RESL";
+	const char FLASH_WAKE_RESPONSE[] = "FLSH:RESL:OK!;\r";
+	//+
+	const char FLASH_SLEEP_COMMAND[] = "DEPO";
+	const char FLASH_SLEEP_RESPONSE[] = "FLSH:DEPO:OK!;\r";
+	//+
+	const char FLASH_WE_COMMAND[] = "WREN";
+	const char FLASH_WE_RESPONSE[] = "FLSH:WREN:OK!;\r";
+	//+
+	const char FLASH_WD_COMMAND[] = "WRDI";
+	const char FLASH_WD_RESPONSE[] = "FLSH:WRDI:OK!;\r";
+	//+
+	const char FLASH_BULK_COMMAND[] = "BUER";
+	const char FLASH_BULK_RESPONSE[] = "FLSH:BUER:OK!;\r";
+	
+	const char FLASH_STAT_R_COMMAND[] = "RDSR";
+	const char FLASH_STAT_R_RESPONSE[] = "FLSH:RDSR:0x%02x;\r";
+	//+
+	const char FLASH_STAT_W_COMMAND[] = "WRSR";
+	const char FLASH_STAT_W_RESPONSE[] = "FLSH:WRSR:OK!;\r";
+	//+
+	const char FLASH_SERASE_COMMAND[] = "SEER";
+	const char FLASH_SERASE_RESPONSE[] = "FLSH:SEER:OK!;\r";
+	
+	const char FLASH_PAGEA_COMMAND[] = "PPAR";
+	const char FLASH_PAGEA_RESPONSE[] = "FLSH:PPAR:OK!;\r";
+	
+	const char FLASH_PAGEB_COMMAND[] = "PPBR";
+	const char FLASH_PAGEB_RESPONSE[] = "FLSH:PPBR:OK!;\r";
+	
+	const char FLASH_PAGEC_COMMAND[] = "PPCO";
+	const char FLASH_PAGEC_RESPONSE[] = "FLSH:PPCO:OK!;\r";
+	
+	const char FLASH_READ_COMMAND[] = "READ";
+	const char FLASH_READ_RESPONSE[] = "FLSH:READ:0x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x;\r";
+	
+	const char FPGA_RST_COMMAND[] = "RSTN";
+	const char FPGA_RST_RESPONSE[] = "FPGA:RSTN:OK!\r;";
+	
+	const char FPGA_SET_COMMAND[] = "FSET";
+	const char FPGA_SET_RESPONSE[] = "FPGA:FSET:OK!;\r";
+	
+	const char FPGA_INIT_SLAVE_COMMAND[] = "COSL";
+	const char FPGA_INIT_SLAVE_RESPONSE[] = "FPGA:COSL:OK!;\r";
+	
+	const char FPGA_CDONE_SLAVE_COMMAND[] = "CODO";
+	const char FPGA_CDONE_SLAVE_RESPONSE[] = "FPGA:CODO:0x%02x;\r";
+	
+	const char FPGA_CONFIG_WRITE16_COMMAND[] = "COWR";
+	const char FPGA_CONFIG_WRITE16_RESPONSE[] = "FPGA:COWR:OK!;\r";
+	
+	const char SOFT_IDEN_COMMAND[] = "IDEN";
+	const char SOFT_IDEN_RESPONSE[] = "SOFT:IDEN:iCE5LP;\r";
+	
+	const char SOFT_VERS_COMMAND[] = "VERS";
+	const char SOFT_VERS_RESPONSE[] = "SOFT:VERS:v1.0;\r";
+	
+	const char SSPI_DEINIT_COMMAND[] = "DEIN";
+	const char SSPI_DEINIT_RESPONSE[] = "SSPI:DEIN:OK!;\r";
+	
+	const char SSPI_INIT_COMMAND[] = "INIT";
+	const char SSPI_INIT_RESPONSE[] = "SSPI:INIT:OK!;\r";
+	
+	const char FLSH_SYSTEM[] = "FLSH";
+	const char FPGA_SYSTEM[] = "FPGA";
+	const char SSPI_SYSTEM[] = "SSPI";
+	const char SOFT_SYSTEM[] = "SOFT";
+	
+	char system_str[5] = "";
+	char command_str[5] = "";
+	char argument_str[40] = "";
+	
+	
+	
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -97,43 +181,45 @@ uint8_t SPI_FLASH_WAKE(){
 	spi_tx_buf[3] = DEEP_PWR_WAKE_CMD;
 	spi_tx_buf[4] = DEEP_PWR_WAKE_CMD;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 5, 1000);
+	HAL_SPI_TransmitReceive(&hspi1, (uint8_t*) spi_tx_buf, (uint8_t*)spi_rx_buf, 5, 1000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
 	return spi_rx_buf[5];
 }
 void SPI_FLASH_SLEEP(){
 	spi_tx_buf[0] = DEEP_PWR_DOWN_CMD;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 1, 1000);
+	HAL_SPI_Transmit(&hspi1, (uint8_t*)spi_tx_buf, 1, 1000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
 }
 uint8_t SPI_FLASH_READ_STATUS(void){
 	spi_tx_buf[0] = READ_STATUS_CMD;
 	spi_tx_buf[1] = READ_STATUS_CMD;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 2, 1000);
+	HAL_SPI_TransmitReceive(&hspi1, (uint8_t*)spi_tx_buf, (uint8_t*)spi_rx_buf, 2, 1000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
-	return spi_rx_buf[2];
+	return spi_rx_buf[1];
 }
 uint8_t SPI_FLASH_WRITE_STATUS(uint8_t status){
 	spi_tx_buf[0] = WRITE_STATUS_CMD;
 	spi_tx_buf[1] = status;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 2, 1000);
+	HAL_SPI_TransmitReceive(&hspi1, (uint8_t*)spi_tx_buf, (uint8_t*)spi_rx_buf, 2, 1000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
-	return spi_rx_buf[2];
+	return spi_rx_buf[1];
 }
 
 void SPI_FLASH_WRITE_ENABLE(void){
 	spi_tx_buf[0] = WRITE_ENABLE_CMD;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 1, 1000);
+	HAL_SPI_Transmit(&hspi1, (uint8_t*)spi_tx_buf, 1, 1000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
 }
 void SPI_FLASH_WRITE_DISABLE(void){
 	spi_tx_buf[0] = WRITE_DISABLE_CMD;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 1, 1000);
+	//
+	//HAL_SPI_Transmit()
+	HAL_SPI_Transmit(&hspi1, (uint8_t*)spi_tx_buf, 1, 1000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
 }
 
@@ -146,20 +232,23 @@ void SPI_FLASH_READ(int addr, int num_to_read){
 		spi_tx_buf[i+4] = READ_DATA_CMD;
 	}
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, num_to_read+4, 2000);
+	HAL_SPI_TransmitReceive(&hspi1, (uint8_t*)spi_tx_buf, (uint8_t*)spi_rx_buf, num_to_read+4, 2000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
 }
 
-void SPI_FLASH_PAGE_PROG(int addr, int num_to_write, uint8_t write_buff[]){
+void SPI_FLASH_PAGE_INIT(int addr){
 	spi_tx_buf[0] = PAGE_PROG_CMD;
 	spi_tx_buf[1] = (addr>>16);
 	spi_tx_buf[2] = (addr>>8);
 	spi_tx_buf[3] = addr;
-	for (uint8_t i = 0; i < num_to_write; i++){
-		spi_tx_buf[i+4] = write_buff[i];
-	}
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, num_to_write+5, 2000);
+	HAL_SPI_Transmit(&hspi1, (uint8_t*)spi_tx_buf, 4 , 2000);
+}
+void SPI_FLASH_PAGE_PROG(int num_to_write){
+	HAL_SPI_Transmit(&hspi1, (uint8_t*)spi_tx_buf, num_to_write, 4000);
+}
+
+void SPI_FLASH_PAGE_COMMIT(){
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
 }
 
@@ -169,15 +258,198 @@ void SPI_FLASH_SECTOR_ERASE(int addr){
 	spi_tx_buf[2] = (addr>>8);
 	spi_tx_buf[3] = addr;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 4, 2000);
+	HAL_SPI_Transmit(&hspi1, (uint8_t*)spi_tx_buf, 4, 2000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
 }
 
 void SPI_FLASH_BULK_ERASE (void){
 	spi_tx_buf[0] = BULK_ERASE_CMD;
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
-	HAL_SPI_TransmitReceive(&hspi1, spi_tx_buf, spi_rx_buf, 1, 2000);
+	HAL_SPI_Transmit(&hspi1, (uint8_t*)spi_tx_buf, 1, 2000);
 	HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
+}
+
+
+void ParseCDCCommand(void){
+		//------------------------------------------------------------------------
+		// Commands in format SYSTEM:COMMAND;
+		//------------------------------------------------------------------------
+	if(strlen(cdc_rx_buf) == MIN_COMMAND_LENGTH){
+		sscanf(cdc_rx_buf, "%4s:%4s;\r", system_str, command_str);
+		if(strcmp(system_str, FLSH_SYSTEM) == 0){
+			if(strcmp(command_str, FLASH_WAKE_COMMAND) == 0){
+				SPI_FLASH_WAKE();
+				CDC_Transmit_FS((uint8_t*)FLASH_WAKE_RESPONSE, strlen(FLASH_WAKE_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_SLEEP_COMMAND) == 0){
+				SPI_FLASH_SLEEP();
+				CDC_Transmit_FS((uint8_t*)FLASH_SLEEP_RESPONSE, strlen(FLASH_SLEEP_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_WE_COMMAND) == 0){
+				SPI_FLASH_WRITE_ENABLE();
+				CDC_Transmit_FS((uint8_t*)FLASH_WE_RESPONSE, strlen(FLASH_WE_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_WD_COMMAND) == 0){
+				SPI_FLASH_WRITE_DISABLE();
+				CDC_Transmit_FS((uint8_t*)FLASH_WD_RESPONSE, strlen(FLASH_WD_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_STAT_R_COMMAND) == 0){
+				int_temp = SPI_FLASH_READ_STATUS();
+				sprintf(data_buf, FLASH_STAT_R_RESPONSE, int_temp);
+				CDC_Transmit_FS((uint8_t*)data_buf, strlen(data_buf));
+			}
+			else if(strcmp(command_str, FLASH_BULK_COMMAND) == 0){
+				SPI_FLASH_BULK_ERASE();
+				CDC_Transmit_FS((uint8_t*)FLASH_BULK_RESPONSE, strlen(FLASH_BULK_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_PAGEC_COMMAND) == 0){
+				SPI_FLASH_PAGE_COMMIT();
+				CDC_Transmit_FS((uint8_t*)FLASH_PAGEC_RESPONSE, strlen(FLASH_PAGEC_RESPONSE));
+			}
+			else {
+				//unknown command received
+				CDC_Transmit_FS((uint8_t*)"FLSH:EROR;\r", strlen("FLSH:EROR;\r"));
+			}
+		}
+		else if(strcmp(system_str, FPGA_SYSTEM) == 0){
+			if(strcmp(command_str, FPGA_RST_COMMAND) == 0){
+				HAL_SPI_Init(&hspi1);
+				HAL_GPIO_DeInit(SPI_SS_GPIO_Port, SPI_SS_Pin);
+				HAL_GPIO_WritePin(CRESET_GPIO_Port, CRESET_Pin, GPIO_PIN_RESET);
+				CDC_Transmit_FS((uint8_t*)FPGA_RST_RESPONSE, strlen(FPGA_RST_RESPONSE));
+				//FPGA_RST_RESPONSE
+			}
+			else if(strcmp(command_str, FPGA_SET_COMMAND) == 0){
+				HAL_SPI_DeInit(&hspi1);
+				HAL_GPIO_DeInit(SPI_SS_GPIO_Port, SPI_SS_Pin);
+				HAL_GPIO_WritePin(CRESET_GPIO_Port, CRESET_Pin, GPIO_PIN_SET);
+				CDC_Transmit_FS((uint8_t*)FPGA_SET_RESPONSE, strlen(FPGA_SET_RESPONSE));
+			}
+			else if (strcmp(command_str, FPGA_INIT_SLAVE_COMMAND) == 0){
+				HAL_GPIO_WritePin(CRESET_GPIO_Port, CRESET_Pin, GPIO_PIN_RESET);
+				HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_RESET);
+				HAL_Delay(2);
+				HAL_GPIO_WritePin(CRESET_GPIO_Port, CRESET_Pin, GPIO_PIN_SET);
+				HAL_Delay(2);				
+				CDC_Transmit_FS((uint8_t*)FPGA_INIT_SLAVE_RESPONSE, strlen(FPGA_INIT_SLAVE_RESPONSE));
+				//MISO can be checked to see if housekeeping done
+			}
+			else if (strcmp(command_str, FPGA_CDONE_SLAVE_COMMAND) == 0){
+				if(HAL_GPIO_ReadPin(CDONE_GPIO_Port, CDONE_Pin) == GPIO_PIN_SET){
+					int_temp = 1;
+				}
+				else{
+					int_temp = 0;
+				}
+				HAL_GPIO_WritePin(CRESET_GPIO_Port, CRESET_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(SPI_SS_GPIO_Port, SPI_SS_Pin, GPIO_PIN_SET);
+				sprintf(data_buf, FPGA_CDONE_SLAVE_RESPONSE, int_temp);
+				CDC_Transmit_FS((uint8_t*)data_buf, strlen(data_buf));
+				//shift 49 or 100 bits here
+				//SPI_FLASH_PAGE_PROG(16);
+				//be carefull here
+			}
+			//else if (strcmp(command_str, FPGA_
+			else {
+				CDC_Transmit_FS((uint8_t*)"FPGA:EROR;\r", strlen("FPGA:EROR;\r"));
+			}
+		}
+		else if(strcmp(system_str, SSPI_SYSTEM) == 0){
+			if(strcmp(command_str, SSPI_DEINIT_COMMAND) == 0){
+				HAL_SPI_DeInit(&hspi1);
+				CDC_Transmit_FS((uint8_t*)SSPI_DEINIT_RESPONSE, strlen(SSPI_DEINIT_RESPONSE));
+			}
+			if(strcmp(command_str, SSPI_INIT_COMMAND) == 0){
+				HAL_SPI_Init(&hspi1);
+				CDC_Transmit_FS((uint8_t*)SSPI_INIT_RESPONSE, strlen(SSPI_INIT_RESPONSE));
+			}
+			//error case
+			CDC_Transmit_FS((uint8_t*)"SSPI:EROR;\r", strlen("SSPI:EROR;\r"));
+		}
+		else if(strcmp(system_str, SOFT_SYSTEM) == 0){
+			if(strcmp(command_str, SOFT_IDEN_COMMAND) == 0){
+				CDC_Transmit_FS((uint8_t*)SOFT_IDEN_RESPONSE, strlen(SOFT_IDEN_RESPONSE));
+			}
+			else if(strcmp(command_str, SOFT_VERS_COMMAND) == 0){
+				CDC_Transmit_FS((uint8_t*)SOFT_VERS_RESPONSE, strlen(SOFT_VERS_RESPONSE));
+			}
+			//error case
+			else {
+				CDC_Transmit_FS((uint8_t*)"SOFT:EROR;\r", strlen("SOFT:EROR;\r"));
+			}
+		}
+	}	
+		//------------------------------------------------------------------------
+		// Commands in format SYSTEM:COMMAND:ARGUMENT;
+		//------------------------------------------------------------------------
+	else if(strlen(cdc_rx_buf) >= MIN_COMMAND_LENGTH){
+		sscanf(cdc_rx_buf, "%4s:%4s:%s;\r", system_str, command_str, argument_str);
+		if(strcmp(system_str, FLSH_SYSTEM) == 0){
+			if(strcmp(command_str, FLASH_STAT_W_COMMAND) == 0){
+				sscanf(argument_str, "0x%02x;", &int_temp);
+				SPI_FLASH_WRITE_STATUS(int_temp);
+				CDC_Transmit_FS((uint8_t*)FLASH_STAT_W_RESPONSE, strlen(FLASH_STAT_W_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_SERASE_COMMAND) == 0){
+				sscanf(argument_str, "0x%06x;", &int_temp);
+				SPI_FLASH_SECTOR_ERASE(int_temp);
+				CDC_Transmit_FS((uint8_t*)FLASH_SERASE_RESPONSE, strlen(FLASH_SERASE_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_PAGEA_COMMAND) == 0){
+				sscanf(argument_str, "0x%06x;", &int_temp);
+				SPI_FLASH_PAGE_INIT(int_temp);
+				CDC_Transmit_FS((uint8_t*)FLASH_PAGEA_RESPONSE, strlen(FLASH_PAGEA_RESPONSE));
+			}
+			else if(strcmp(command_str, FLASH_READ_COMMAND) == 0){
+				sscanf(argument_str, "0x%06x;", &int_temp);
+				SPI_FLASH_READ(int_temp, 16);
+				sprintf(data_buf, FLASH_READ_RESPONSE, spi_rx_buf[4],spi_rx_buf[5],spi_rx_buf[6],spi_rx_buf[7],spi_rx_buf[8],spi_rx_buf[9],
+				spi_rx_buf[10],spi_rx_buf[11],spi_rx_buf[12],spi_rx_buf[13],spi_rx_buf[14],spi_rx_buf[15],spi_rx_buf[16],spi_rx_buf[17],spi_rx_buf[18],spi_rx_buf[19]); //"FLSH:READ:0x%02%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x\r\n";
+				CDC_Transmit_FS((uint8_t*)data_buf, strlen(data_buf));
+			}
+			else if(strcmp(command_str, FLASH_PAGEB_COMMAND) == 0){
+				sscanf(argument_str, "0x%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx;", &spi_tx_buf[0],&spi_tx_buf[1],&spi_tx_buf[2],&spi_tx_buf[3],&spi_tx_buf[4],
+				&spi_tx_buf[5],&spi_tx_buf[6],&spi_tx_buf[7],&spi_tx_buf[8],&spi_tx_buf[9],&spi_tx_buf[10],&spi_tx_buf[11],&spi_tx_buf[12],&spi_tx_buf[13],&spi_tx_buf[14],&spi_tx_buf[15]);
+				SPI_FLASH_PAGE_PROG(16);
+				CDC_Transmit_FS((uint8_t*)FLASH_PAGEB_RESPONSE, strlen(FLASH_PAGEB_RESPONSE));
+			}
+			else {
+				CDC_Transmit_FS((uint8_t*)"FLSH:EROR;\r", strlen("FLSH:EROR;\r"));
+			}
+		}
+		else if(strcmp(system_str, FPGA_SYSTEM) == 0){
+			if (strcmp(command_str, FPGA_CONFIG_WRITE16_COMMAND) == 0){
+				int_temp = sscanf(argument_str, "0x%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx;", &spi_tx_buf[0],&spi_tx_buf[1],&spi_tx_buf[2],&spi_tx_buf[3],&spi_tx_buf[4],
+				&spi_tx_buf[5],&spi_tx_buf[6],&spi_tx_buf[7],&spi_tx_buf[8],&spi_tx_buf[9],&spi_tx_buf[10],&spi_tx_buf[11],&spi_tx_buf[12],&spi_tx_buf[13],&spi_tx_buf[14],&spi_tx_buf[15]);
+				SPI_FLASH_PAGE_PROG(16);
+				CDC_Transmit_FS((uint8_t*)FPGA_CONFIG_WRITE16_RESPONSE, strlen(FPGA_CONFIG_WRITE16_RESPONSE));
+				
+				//sscanf(argument_str, "0x%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx%02hhx;", &spi_tx_buf[0],&spi_tx_buf[1],&spi_tx_buf[2],&spi_tx_buf[3],&spi_tx_buf[4],
+				//&spi_tx_buf[5],&spi_tx_buf[6],&spi_tx_buf[7],&spi_tx_buf[8],&spi_tx_buf[9],&spi_tx_buf[10],&spi_tx_buf[11],&spi_tx_buf[12],&spi_tx_buf[13],&spi_tx_buf[14],&spi_tx_buf[15]);
+				//SPI_FLASH_PAGE_PROG(16);
+				//CDC_Transmit_FS((uint8_t*)FLASH_PAGEB_RESPONSE, strlen(FLASH_PAGEB_RESPONSE));
+			}
+			else {
+				CDC_Transmit_FS((uint8_t*)"FPGA:EROR;\r", strlen("FPGA:EROR;\r"));
+			}
+		}
+		else if(strcmp(system_str, SSPI_SYSTEM) == 0){
+			CDC_Transmit_FS((uint8_t*)"SSPI:EROR;\r", strlen("SSPI:EROR;\r"));
+		}
+		
+		else if(strcmp(system_str, SOFT_SYSTEM) == 0){
+			CDC_Transmit_FS((uint8_t*)"SOFT:EROR;\r", strlen("SOFT:EROR;\r"));
+		}
+
+	}
+	else {
+		CDC_Transmit_FS((uint8_t*)"CMND:EROR;\r", strlen("CMND:EROR;\r"));
+	}
+	memset(command_str, 0, 5);// = '\0';
+	memset(system_str, 0, 5);//system_str[0] = '\0';
+	memset(argument_str, 0, 40);//argument_str[0] = '\0';
+	memset(cdc_rx_buf, 0, 64);//cdc_rx_buf[0] = '\0';
+	command_received = 0;
 }
 
 /* USER CODE END 0 */
@@ -211,34 +483,11 @@ int main(void)
   MX_SPI1_Init();
 
   /* USER CODE BEGIN 2 */
-	SPI_FLASH_WAKE();
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_WRITE_ENABLE();
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_SECTOR_ERASE(0);
-	SPI_FLASH_READ_STATUS();
-	HAL_Delay(5000);
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_WRITE_ENABLE();
-	SPI_FLASH_PAGE_PROG(0, 16, data_buf);
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_READ_STATUS();	
-	HAL_Delay(1000);
-	SPI_FLASH_READ(0, 16);
-	SPI_FLASH_WRITE_ENABLE();
-	SPI_FLASH_SLEEP();
-	HAL_Delay(2);
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_WAKE();
-	SPI_FLASH_READ_STATUS();
-	SPI_FLASH_SLEEP();
-	HAL_Delay(2);
-	SPI_FLASH_READ_STATUS();
-	//SPI_FLASH_READ_STATUS();
 	
+	//FPGA SAFETY
+	HAL_GPIO_WritePin(CRESET_GPIO_Port, CRESET_Pin, GPIO_PIN_RESET); // set active reset for FPGA
+	
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -248,8 +497,12 @@ int main(void)
   /* USER CODE END WHILE */
 
   /* USER CODE BEGIN 3 */
-
-  }
+		if(command_received == 1){
+			ParseCDCCommand();
+		}
+		
+		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, HAL_GPIO_ReadPin(CDONE_GPIO_Port, CDONE_Pin));
+	}
   /* USER CODE END 3 */
 
 }
@@ -281,11 +534,11 @@ void SystemClock_Config(void)
     */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     _Error_Handler(__FILE__, __LINE__);
   }
@@ -321,7 +574,7 @@ static void MX_SPI1_Init(void)
   hspi1.Init.CLKPolarity = SPI_POLARITY_HIGH;
   hspi1.Init.CLKPhase = SPI_PHASE_2EDGE;
   hspi1.Init.NSS = SPI_NSS_SOFT;
-  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_16;
+  hspi1.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_4;
   hspi1.Init.FirstBit = SPI_FIRSTBIT_MSB;
   hspi1.Init.TIMode = SPI_TIMODE_DISABLE;
   hspi1.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;

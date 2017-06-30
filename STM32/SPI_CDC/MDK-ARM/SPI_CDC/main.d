@@ -36,3 +36,10 @@ spi_cdc\main.o: ../Inc/usbd_conf.h
 spi_cdc\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 spi_cdc\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h
+spi_cdc\main.o: ../Inc/usbd_cdc_if.h
+spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h
+spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
+spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
+spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
+spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+spi_cdc\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
