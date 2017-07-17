@@ -1,0 +1,588 @@
+# ******************************************************************************
+
+# iCEcube Static Timer
+
+# Version:            2017.01.27914
+
+# Build Date:         Jan 12 2017 18:39:30
+
+# File Generated:     Jun 29 2017 23:37:00
+
+# Purpose:            Timing Report with critical paths info
+
+# Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+# ******************************************************************************
+
+Device: iCE5LP2K
+Derating factors (Best:Typical:Worst) :-  ( 0.491675 : 0.859651 : 1.32445 )
+Derating factor used to generate this timing report:  Worst
+Based on the following operating conditions 
+Junction Temperature(degree Celsius): 85
+Core Voltage(V): 1.14
+Process Corner:  Worst
+NOTE:
+Please check both worst-case and best-case scenarios for "Setup Times" 
+and "Hold Times" checks
+Maximum Operating Frequency is: N/A
+
+
+ #####################################################################
+                    3::Datasheet Report
+
+All values are in Picoseconds
+ =====================================================================
+
+                        3.1::Setup Times
+                        ----------------
+
+Data Port  Clock Port  Setup Times  Clock Reference:Phase  
+---------  ----------  -----------  ---------------------  
+
+
+                       3.2::Clock to Out
+                       -----------------
+
+Data Port  Clock Port  Clock to Out  Clock Reference:Phase  
+---------  ----------  ------------  ---------------------  
+
+
+                         3.3::Pad to Pad
+                         ---------------
+
+Port Name (Input)  Port Name (Output)  Pad to Pad  
+-----------------  ------------------  ----------  
+i_switch[2]        LEDB                323756      
+i_switch[1]        LEDG                324538      
+i_switch[0]        LEDR                323756      
+
+
+                         3.4::Hold Times
+                         ---------------
+
+Data Port  Clock Port  Hold Times  Clock Reference:Phase  
+---------  ----------  ----------  ---------------------  
+
+
+               3.5::Minimum Clock to Out
+               -------------------------
+
+Data Port  Clock Port  Minimum Clock to Out  Clock Reference:Phase  
+---------  ----------  --------------------  ---------------------  
+
+
+                 3.6::Minimum Pad To Pad
+                 -----------------------
+
+Port Name (Input)  Port Name (Output)  Minimum Pad To Pad  
+-----------------  ------------------  ------------------  
+i_switch[2]        LEDB                52153               
+i_switch[1]        LEDG                52776               
+i_switch[0]        LEDR                52153               
+
+ =====================================================================
+                    End of Datasheet Report
+ #####################################################################
+
+ #####################################################################
+                    6::Path Details for DataSheet
+ =====================================================================
+
+
+6.3::PI to PO Path Details              
+--------------------------------------------------
+
+6.3.1::Path details for port: LEDB      
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : LEDB
+Input Port       : i_switch[2]
+Pad to Pad Delay : 323756
+
+Pad to Pad Path
+pin name                             model name              delay   cummulative delay  edge  Fanout  
+-----------------------------------  ----------------------  ------  -----------------  ----  ------  
+i_switch[2]                          top                     0       0                  RISE  1       
+i_switch_ibuf_2_iopad/PACKAGEPIN:in  IO_PAD                  0       0                  RISE  1       
+i_switch_ibuf_2_iopad/DOUT           IO_PAD                  510     510                RISE  1       
+i_switch_ibuf_2_preio/PADIN          PRE_IO_PIN_TYPE_000001  0       510                RISE  1       
+i_switch_ibuf_2_preio/DIN0           PRE_IO_PIN_TYPE_000001  490     1000               FALL  1       
+I__45/I                              Odrv4                   0       1000               FALL  1       
+I__45/O                              Odrv4                   649     1649               FALL  1       
+I__46/I                              IoSpan4Mux              0       1649               FALL  1       
+I__46/O                              IoSpan4Mux              742     2391               FALL  1       
+I__47/I                              IoSpan4Mux              0       2391               FALL  1       
+I__47/O                              IoSpan4Mux              742     3132               FALL  1       
+I__48/I                              IoSpan4Mux              0       3132               FALL  1       
+I__48/O                              IoSpan4Mux              742     3874               FALL  1       
+I__49/I                              IoSpan4Mux              0       3874               FALL  1       
+I__49/O                              IoSpan4Mux              742     4616               FALL  1       
+I__50/I                              LocalMux                0       4616               FALL  1       
+I__50/O                              LocalMux                768     5384               FALL  1       
+I__51/I                              InMux                   0       5384               FALL  1       
+I__51/O                              InMux                   503     5887               FALL  1       
+RGB_DRIVER/RGB2PWM                   SB_RGB_DRV              0       5887               FALL  1       
+RGB_DRIVER/RGB2                      SB_RGB_DRV              317869  323756             FALL  0       
+LEDB                                 top                     0       323756             FALL  1       
+
+6.3.2::Path details for port: LEDG      
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : LEDG
+Input Port       : i_switch[1]
+Pad to Pad Delay : 324538
+
+Pad to Pad Path
+pin name                             model name              delay   cummulative delay  edge  Fanout  
+-----------------------------------  ----------------------  ------  -----------------  ----  ------  
+i_switch[1]                          top                     0       0                  RISE  1       
+i_switch_ibuf_1_iopad/PACKAGEPIN:in  IO_PAD                  0       0                  RISE  1       
+i_switch_ibuf_1_iopad/DOUT           IO_PAD                  510     510                RISE  1       
+i_switch_ibuf_1_preio/PADIN          PRE_IO_PIN_TYPE_000001  0       510                RISE  1       
+i_switch_ibuf_1_preio/DIN0           PRE_IO_PIN_TYPE_000001  490     1000               FALL  1       
+I__38/I                              Odrv12                  0       1000               FALL  1       
+I__38/O                              Odrv12                  1232    2232               FALL  1       
+I__39/I                              Span12Mux_h             0       2232               FALL  1       
+I__39/O                              Span12Mux_h             1232    3464               FALL  1       
+I__40/I                              Span12Mux_s7_h          0       3464               FALL  1       
+I__40/O                              Span12Mux_s7_h          742     4205               FALL  1       
+I__41/I                              Sp12to4                 0       4205               FALL  1       
+I__41/O                              Sp12to4                 848     5053               FALL  1       
+I__42/I                              Span4Mux_s1_v           0       5053               FALL  1       
+I__42/O                              Span4Mux_s1_v           344     5397               FALL  1       
+I__43/I                              LocalMux                0       5397               FALL  1       
+I__43/O                              LocalMux                768     6165               FALL  1       
+I__44/I                              InMux                   0       6165               FALL  1       
+I__44/O                              InMux                   503     6669               FALL  1       
+RGB_DRIVER/RGB1PWM                   SB_RGB_DRV              0       6669               FALL  1       
+RGB_DRIVER/RGB1                      SB_RGB_DRV              317869  324538             FALL  0       
+LEDG                                 top                     0       324538             FALL  1       
+
+6.3.3::Path details for port: LEDR      
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : LEDR
+Input Port       : i_switch[0]
+Pad to Pad Delay : 323756
+
+Pad to Pad Path
+pin name                             model name              delay   cummulative delay  edge  Fanout  
+-----------------------------------  ----------------------  ------  -----------------  ----  ------  
+i_switch[0]                          top                     0       0                  RISE  1       
+i_switch_ibuf_0_iopad/PACKAGEPIN:in  IO_PAD                  0       0                  RISE  1       
+i_switch_ibuf_0_iopad/DOUT           IO_PAD                  510     510                RISE  1       
+i_switch_ibuf_0_preio/PADIN          PRE_IO_PIN_TYPE_000001  0       510                RISE  1       
+i_switch_ibuf_0_preio/DIN0           PRE_IO_PIN_TYPE_000001  490     1000               FALL  1       
+I__27/I                              Odrv4                   0       1000               FALL  1       
+I__27/O                              Odrv4                   649     1649               FALL  1       
+I__28/I                              IoSpan4Mux              0       1649               FALL  1       
+I__28/O                              IoSpan4Mux              742     2391               FALL  1       
+I__29/I                              IoSpan4Mux              0       2391               FALL  1       
+I__29/O                              IoSpan4Mux              742     3132               FALL  1       
+I__30/I                              IoSpan4Mux              0       3132               FALL  1       
+I__30/O                              IoSpan4Mux              742     3874               FALL  1       
+I__31/I                              IoSpan4Mux              0       3874               FALL  1       
+I__31/O                              IoSpan4Mux              742     4616               FALL  1       
+I__32/I                              LocalMux                0       4616               FALL  1       
+I__32/O                              LocalMux                768     5384               FALL  1       
+I__33/I                              InMux                   0       5384               FALL  1       
+I__33/O                              InMux                   503     5887               FALL  1       
+RGB_DRIVER/RGB0PWM                   SB_RGB_DRV              0       5887               FALL  1       
+RGB_DRIVER/RGB0                      SB_RGB_DRV              317869  323756             FALL  0       
+LEDR                                 top                     0       323756             FALL  1       
+
+6.6::Min PI to PO Path Details          
+--------------------------------------------------
+
+6.6.1::Path details for port: LEDB      
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : LEDB
+Input Port       : i_switch[2]
+Pad to Pad Delay : 52153
+
+Pad to Pad Path
+pin name                             model name              delay  cummulative delay  edge  Fanout  
+-----------------------------------  ----------------------  -----  -----------------  ----  ------  
+i_switch[2]                          top                     0      0                  FALL  1       
+i_switch_ibuf_2_iopad/PACKAGEPIN:in  IO_PAD                  0      0                  FALL  1       
+i_switch_ibuf_2_iopad/DOUT           IO_PAD                  460    460                FALL  1       
+i_switch_ibuf_2_preio/PADIN          PRE_IO_PIN_TYPE_000001  0      460                FALL  1       
+i_switch_ibuf_2_preio/DIN0           PRE_IO_PIN_TYPE_000001  490    950                RISE  1       
+I__45/I                              Odrv4                   0      950                RISE  1       
+I__45/O                              Odrv4                   596    1546               RISE  1       
+I__46/I                              IoSpan4Mux              0      1546               RISE  1       
+I__46/O                              IoSpan4Mux              622    2169               RISE  1       
+I__47/I                              IoSpan4Mux              0      2169               RISE  1       
+I__47/O                              IoSpan4Mux              622    2791               RISE  1       
+I__48/I                              IoSpan4Mux              0      2791               RISE  1       
+I__48/O                              IoSpan4Mux              622    3414               RISE  1       
+I__49/I                              IoSpan4Mux              0      3414               RISE  1       
+I__49/O                              IoSpan4Mux              622    4036               RISE  1       
+I__50/I                              LocalMux                0      4036               RISE  1       
+I__50/O                              LocalMux                1099   5135               RISE  1       
+I__51/I                              InMux                   0      5135               RISE  1       
+I__51/O                              InMux                   662    5798               RISE  1       
+RGB_DRIVER/RGB2PWM                   SB_RGB_DRV              0      5798               RISE  1       
+RGB_DRIVER/RGB2                      SB_RGB_DRV              46356  52153              RISE  0       
+LEDB                                 top                     0      52153              RISE  1       
+
+6.6.2::Path details for port: LEDG      
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : LEDG
+Input Port       : i_switch[1]
+Pad to Pad Delay : 52776
+
+Pad to Pad Path
+pin name                             model name              delay  cummulative delay  edge  Fanout  
+-----------------------------------  ----------------------  -----  -----------------  ----  ------  
+i_switch[1]                          top                     0      0                  FALL  1       
+i_switch_ibuf_1_iopad/PACKAGEPIN:in  IO_PAD                  0      0                  FALL  1       
+i_switch_ibuf_1_iopad/DOUT           IO_PAD                  460    460                FALL  1       
+i_switch_ibuf_1_preio/PADIN          PRE_IO_PIN_TYPE_000001  0      460                FALL  1       
+i_switch_ibuf_1_preio/DIN0           PRE_IO_PIN_TYPE_000001  490    950                RISE  1       
+I__38/I                              Odrv12                  0      950                RISE  1       
+I__38/O                              Odrv12                  1073   2023               RISE  1       
+I__39/I                              Span12Mux_h             0      2023               RISE  1       
+I__39/O                              Span12Mux_h             1073   3096               RISE  1       
+I__40/I                              Span12Mux_s7_h          0      3096               RISE  1       
+I__40/O                              Span12Mux_s7_h          622    3718               RISE  1       
+I__41/I                              Sp12to4                 0      3718               RISE  1       
+I__41/O                              Sp12to4                 596    4314               RISE  1       
+I__42/I                              Span4Mux_s1_v           0      4314               RISE  1       
+I__42/O                              Span4Mux_s1_v           344    4659               RISE  1       
+I__43/I                              LocalMux                0      4659               RISE  1       
+I__43/O                              LocalMux                1099   5758               RISE  1       
+I__44/I                              InMux                   0      5758               RISE  1       
+I__44/O                              InMux                   662    6420               RISE  1       
+RGB_DRIVER/RGB1PWM                   SB_RGB_DRV              0      6420               RISE  1       
+RGB_DRIVER/RGB1                      SB_RGB_DRV              46356  52776              RISE  0       
+LEDG                                 top                     0      52776              RISE  1       
+
+6.6.3::Path details for port: LEDR      
+--------------------------------------------------
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Output Port      : LEDR
+Input Port       : i_switch[0]
+Pad to Pad Delay : 52153
+
+Pad to Pad Path
+pin name                             model name              delay  cummulative delay  edge  Fanout  
+-----------------------------------  ----------------------  -----  -----------------  ----  ------  
+i_switch[0]                          top                     0      0                  FALL  1       
+i_switch_ibuf_0_iopad/PACKAGEPIN:in  IO_PAD                  0      0                  FALL  1       
+i_switch_ibuf_0_iopad/DOUT           IO_PAD                  460    460                FALL  1       
+i_switch_ibuf_0_preio/PADIN          PRE_IO_PIN_TYPE_000001  0      460                FALL  1       
+i_switch_ibuf_0_preio/DIN0           PRE_IO_PIN_TYPE_000001  490    950                RISE  1       
+I__27/I                              Odrv4                   0      950                RISE  1       
+I__27/O                              Odrv4                   596    1546               RISE  1       
+I__28/I                              IoSpan4Mux              0      1546               RISE  1       
+I__28/O                              IoSpan4Mux              622    2169               RISE  1       
+I__29/I                              IoSpan4Mux              0      2169               RISE  1       
+I__29/O                              IoSpan4Mux              622    2791               RISE  1       
+I__30/I                              IoSpan4Mux              0      2791               RISE  1       
+I__30/O                              IoSpan4Mux              622    3414               RISE  1       
+I__31/I                              IoSpan4Mux              0      3414               RISE  1       
+I__31/O                              IoSpan4Mux              622    4036               RISE  1       
+I__32/I                              LocalMux                0      4036               RISE  1       
+I__32/O                              LocalMux                1099   5135               RISE  1       
+I__33/I                              InMux                   0      5135               RISE  1       
+I__33/O                              InMux                   662    5798               RISE  1       
+RGB_DRIVER/RGB0PWM                   SB_RGB_DRV              0      5798               RISE  1       
+RGB_DRIVER/RGB0                      SB_RGB_DRV              46356  52153              RISE  0       
+LEDR                                 top                     0      52153              RISE  1       
+
+
+ =====================================================================
+                    End of Path Details for Datasheet
+ #####################################################################
+
+##################################################################### 
+                    Detailed Setup Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_switch[2]
+Path End         : LEDB
+Setup Constraint : +INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)        0
++ Launch Clock Source Latency                  0
++ Input Delay                                  0
++ Data Path Delay                         323756
+---------------------------------------   ------ 
+End-of-path arrival time (ps)             323756
+ 
+Data path
+pin name                             model name               delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  ----------------------  ------  ----------------  -----  ----  ------
+i_switch[2]                          top                          0                 0   +INF  RISE       1
+i_switch_ibuf_2_iopad/PACKAGEPIN:in  IO_PAD                       0                 0   +INF  RISE       1
+i_switch_ibuf_2_iopad/DOUT           IO_PAD                     510               510   +INF  RISE       1
+i_switch_ibuf_2_preio/PADIN          PRE_IO_PIN_TYPE_000001       0               510   +INF  RISE       1
+i_switch_ibuf_2_preio/DIN0           PRE_IO_PIN_TYPE_000001     490              1000   +INF  FALL       1
+I__45/I                              Odrv4                        0              1000   +INF  FALL       1
+I__45/O                              Odrv4                      649              1649   +INF  FALL       1
+I__46/I                              IoSpan4Mux                   0              1649   +INF  FALL       1
+I__46/O                              IoSpan4Mux                 742              2391   +INF  FALL       1
+I__47/I                              IoSpan4Mux                   0              2391   +INF  FALL       1
+I__47/O                              IoSpan4Mux                 742              3132   +INF  FALL       1
+I__48/I                              IoSpan4Mux                   0              3132   +INF  FALL       1
+I__48/O                              IoSpan4Mux                 742              3874   +INF  FALL       1
+I__49/I                              IoSpan4Mux                   0              3874   +INF  FALL       1
+I__49/O                              IoSpan4Mux                 742              4616   +INF  FALL       1
+I__50/I                              LocalMux                     0              4616   +INF  FALL       1
+I__50/O                              LocalMux                   768              5384   +INF  FALL       1
+I__51/I                              InMux                        0              5384   +INF  FALL       1
+I__51/O                              InMux                      503              5887   +INF  FALL       1
+RGB_DRIVER/RGB2PWM                   SB_RGB_DRV                   0              5887   +INF  FALL       1
+RGB_DRIVER/RGB2                      SB_RGB_DRV              317869            323756   +INF  FALL       0
+LEDB                                 top                          0            323756   +INF  FALL       1
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_switch[1]
+Path End         : LEDG
+Setup Constraint : +INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)        0
++ Launch Clock Source Latency                  0
++ Input Delay                                  0
++ Data Path Delay                         324538
+---------------------------------------   ------ 
+End-of-path arrival time (ps)             324538
+ 
+Data path
+pin name                             model name               delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  ----------------------  ------  ----------------  -----  ----  ------
+i_switch[1]                          top                          0                 0   +INF  RISE       1
+i_switch_ibuf_1_iopad/PACKAGEPIN:in  IO_PAD                       0                 0   +INF  RISE       1
+i_switch_ibuf_1_iopad/DOUT           IO_PAD                     510               510   +INF  RISE       1
+i_switch_ibuf_1_preio/PADIN          PRE_IO_PIN_TYPE_000001       0               510   +INF  RISE       1
+i_switch_ibuf_1_preio/DIN0           PRE_IO_PIN_TYPE_000001     490              1000   +INF  FALL       1
+I__38/I                              Odrv12                       0              1000   +INF  FALL       1
+I__38/O                              Odrv12                    1232              2232   +INF  FALL       1
+I__39/I                              Span12Mux_h                  0              2232   +INF  FALL       1
+I__39/O                              Span12Mux_h               1232              3464   +INF  FALL       1
+I__40/I                              Span12Mux_s7_h               0              3464   +INF  FALL       1
+I__40/O                              Span12Mux_s7_h             742              4205   +INF  FALL       1
+I__41/I                              Sp12to4                      0              4205   +INF  FALL       1
+I__41/O                              Sp12to4                    848              5053   +INF  FALL       1
+I__42/I                              Span4Mux_s1_v                0              5053   +INF  FALL       1
+I__42/O                              Span4Mux_s1_v              344              5397   +INF  FALL       1
+I__43/I                              LocalMux                     0              5397   +INF  FALL       1
+I__43/O                              LocalMux                   768              6165   +INF  FALL       1
+I__44/I                              InMux                        0              6165   +INF  FALL       1
+I__44/O                              InMux                      503              6669   +INF  FALL       1
+RGB_DRIVER/RGB1PWM                   SB_RGB_DRV                   0              6669   +INF  FALL       1
+RGB_DRIVER/RGB1                      SB_RGB_DRV              317869            324538   +INF  FALL       0
+LEDG                                 top                          0            324538   +INF  FALL       1
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_switch[0]
+Path End         : LEDR
+Setup Constraint : +INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)        0
++ Launch Clock Source Latency                  0
++ Input Delay                                  0
++ Data Path Delay                         323756
+---------------------------------------   ------ 
+End-of-path arrival time (ps)             323756
+ 
+Data path
+pin name                             model name               delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  ----------------------  ------  ----------------  -----  ----  ------
+i_switch[0]                          top                          0                 0   +INF  RISE       1
+i_switch_ibuf_0_iopad/PACKAGEPIN:in  IO_PAD                       0                 0   +INF  RISE       1
+i_switch_ibuf_0_iopad/DOUT           IO_PAD                     510               510   +INF  RISE       1
+i_switch_ibuf_0_preio/PADIN          PRE_IO_PIN_TYPE_000001       0               510   +INF  RISE       1
+i_switch_ibuf_0_preio/DIN0           PRE_IO_PIN_TYPE_000001     490              1000   +INF  FALL       1
+I__27/I                              Odrv4                        0              1000   +INF  FALL       1
+I__27/O                              Odrv4                      649              1649   +INF  FALL       1
+I__28/I                              IoSpan4Mux                   0              1649   +INF  FALL       1
+I__28/O                              IoSpan4Mux                 742              2391   +INF  FALL       1
+I__29/I                              IoSpan4Mux                   0              2391   +INF  FALL       1
+I__29/O                              IoSpan4Mux                 742              3132   +INF  FALL       1
+I__30/I                              IoSpan4Mux                   0              3132   +INF  FALL       1
+I__30/O                              IoSpan4Mux                 742              3874   +INF  FALL       1
+I__31/I                              IoSpan4Mux                   0              3874   +INF  FALL       1
+I__31/O                              IoSpan4Mux                 742              4616   +INF  FALL       1
+I__32/I                              LocalMux                     0              4616   +INF  FALL       1
+I__32/O                              LocalMux                   768              5384   +INF  FALL       1
+I__33/I                              InMux                        0              5384   +INF  FALL       1
+I__33/O                              InMux                      503              5887   +INF  FALL       1
+RGB_DRIVER/RGB0PWM                   SB_RGB_DRV                   0              5887   +INF  FALL       1
+RGB_DRIVER/RGB0                      SB_RGB_DRV              317869            323756   +INF  FALL       0
+LEDR                                 top                          0            323756   +INF  FALL       1
+
+===================================================================== 
+                    End of Detailed Setup Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    Detailed Hold Report for all timing paths 
+===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_switch[2]
+Path End         : LEDB
+Hold Constraint  : -INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)        0
++ Launch Clock Source Latency                  0
++ Input Delay                                  0
++ Data Path Delay                         323756
+---------------------------------------   ------ 
+End-of-path arrival time (ps)             323756
+ 
+Data path
+pin name                             model name               delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  ----------------------  ------  ----------------  -----  ----  ------
+i_switch[2]                          top                          0                 0   +INF  RISE       1
+i_switch_ibuf_2_iopad/PACKAGEPIN:in  IO_PAD                       0                 0   +INF  RISE       1
+i_switch_ibuf_2_iopad/DOUT           IO_PAD                     510               510   +INF  RISE       1
+i_switch_ibuf_2_preio/PADIN          PRE_IO_PIN_TYPE_000001       0               510   +INF  RISE       1
+i_switch_ibuf_2_preio/DIN0           PRE_IO_PIN_TYPE_000001     490              1000   +INF  FALL       1
+I__45/I                              Odrv4                        0              1000   +INF  FALL       1
+I__45/O                              Odrv4                      649              1649   +INF  FALL       1
+I__46/I                              IoSpan4Mux                   0              1649   +INF  FALL       1
+I__46/O                              IoSpan4Mux                 742              2391   +INF  FALL       1
+I__47/I                              IoSpan4Mux                   0              2391   +INF  FALL       1
+I__47/O                              IoSpan4Mux                 742              3132   +INF  FALL       1
+I__48/I                              IoSpan4Mux                   0              3132   +INF  FALL       1
+I__48/O                              IoSpan4Mux                 742              3874   +INF  FALL       1
+I__49/I                              IoSpan4Mux                   0              3874   +INF  FALL       1
+I__49/O                              IoSpan4Mux                 742              4616   +INF  FALL       1
+I__50/I                              LocalMux                     0              4616   +INF  FALL       1
+I__50/O                              LocalMux                   768              5384   +INF  FALL       1
+I__51/I                              InMux                        0              5384   +INF  FALL       1
+I__51/O                              InMux                      503              5887   +INF  FALL       1
+RGB_DRIVER/RGB2PWM                   SB_RGB_DRV                   0              5887   +INF  FALL       1
+RGB_DRIVER/RGB2                      SB_RGB_DRV              317869            323756   +INF  FALL       0
+LEDB                                 top                          0            323756   +INF  FALL       1
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_switch[1]
+Path End         : LEDG
+Hold Constraint  : -INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)        0
++ Launch Clock Source Latency                  0
++ Input Delay                                  0
++ Data Path Delay                         324538
+---------------------------------------   ------ 
+End-of-path arrival time (ps)             324538
+ 
+Data path
+pin name                             model name               delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  ----------------------  ------  ----------------  -----  ----  ------
+i_switch[1]                          top                          0                 0   +INF  RISE       1
+i_switch_ibuf_1_iopad/PACKAGEPIN:in  IO_PAD                       0                 0   +INF  RISE       1
+i_switch_ibuf_1_iopad/DOUT           IO_PAD                     510               510   +INF  RISE       1
+i_switch_ibuf_1_preio/PADIN          PRE_IO_PIN_TYPE_000001       0               510   +INF  RISE       1
+i_switch_ibuf_1_preio/DIN0           PRE_IO_PIN_TYPE_000001     490              1000   +INF  FALL       1
+I__38/I                              Odrv12                       0              1000   +INF  FALL       1
+I__38/O                              Odrv12                    1232              2232   +INF  FALL       1
+I__39/I                              Span12Mux_h                  0              2232   +INF  FALL       1
+I__39/O                              Span12Mux_h               1232              3464   +INF  FALL       1
+I__40/I                              Span12Mux_s7_h               0              3464   +INF  FALL       1
+I__40/O                              Span12Mux_s7_h             742              4205   +INF  FALL       1
+I__41/I                              Sp12to4                      0              4205   +INF  FALL       1
+I__41/O                              Sp12to4                    848              5053   +INF  FALL       1
+I__42/I                              Span4Mux_s1_v                0              5053   +INF  FALL       1
+I__42/O                              Span4Mux_s1_v              344              5397   +INF  FALL       1
+I__43/I                              LocalMux                     0              5397   +INF  FALL       1
+I__43/O                              LocalMux                   768              6165   +INF  FALL       1
+I__44/I                              InMux                        0              6165   +INF  FALL       1
+I__44/O                              InMux                      503              6669   +INF  FALL       1
+RGB_DRIVER/RGB1PWM                   SB_RGB_DRV                   0              6669   +INF  FALL       1
+RGB_DRIVER/RGB1                      SB_RGB_DRV              317869            324538   +INF  FALL       0
+LEDG                                 top                          0            324538   +INF  FALL       1
+
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : i_switch[0]
+Path End         : LEDR
+Hold Constraint  : -INF
+Path slack       : +INF
+
+End-of-path required time (ps)           +INF
+
+Launch Clock Arrival Time (DEFAULT:R#0)        0
++ Launch Clock Source Latency                  0
++ Input Delay                                  0
++ Data Path Delay                         323756
+---------------------------------------   ------ 
+End-of-path arrival time (ps)             323756
+ 
+Data path
+pin name                             model name               delay  cumulative delay  slack  edge  Fanout
+-----------------------------------  ----------------------  ------  ----------------  -----  ----  ------
+i_switch[0]                          top                          0                 0   +INF  RISE       1
+i_switch_ibuf_0_iopad/PACKAGEPIN:in  IO_PAD                       0                 0   +INF  RISE       1
+i_switch_ibuf_0_iopad/DOUT           IO_PAD                     510               510   +INF  RISE       1
+i_switch_ibuf_0_preio/PADIN          PRE_IO_PIN_TYPE_000001       0               510   +INF  RISE       1
+i_switch_ibuf_0_preio/DIN0           PRE_IO_PIN_TYPE_000001     490              1000   +INF  FALL       1
+I__27/I                              Odrv4                        0              1000   +INF  FALL       1
+I__27/O                              Odrv4                      649              1649   +INF  FALL       1
+I__28/I                              IoSpan4Mux                   0              1649   +INF  FALL       1
+I__28/O                              IoSpan4Mux                 742              2391   +INF  FALL       1
+I__29/I                              IoSpan4Mux                   0              2391   +INF  FALL       1
+I__29/O                              IoSpan4Mux                 742              3132   +INF  FALL       1
+I__30/I                              IoSpan4Mux                   0              3132   +INF  FALL       1
+I__30/O                              IoSpan4Mux                 742              3874   +INF  FALL       1
+I__31/I                              IoSpan4Mux                   0              3874   +INF  FALL       1
+I__31/O                              IoSpan4Mux                 742              4616   +INF  FALL       1
+I__32/I                              LocalMux                     0              4616   +INF  FALL       1
+I__32/O                              LocalMux                   768              5384   +INF  FALL       1
+I__33/I                              InMux                        0              5384   +INF  FALL       1
+I__33/O                              InMux                      503              5887   +INF  FALL       1
+RGB_DRIVER/RGB0PWM                   SB_RGB_DRV                   0              5887   +INF  FALL       1
+RGB_DRIVER/RGB0                      SB_RGB_DRV              317869            323756   +INF  FALL       0
+LEDR                                 top                          0            323756   +INF  FALL       1
+
+===================================================================== 
+                    End of Detailed Hold Report for all timing paths 
+##################################################################### 
+
+##################################################################### 
+                    End of Timing Report 
+##################################################################### 
+

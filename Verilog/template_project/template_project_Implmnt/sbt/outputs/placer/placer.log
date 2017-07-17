@@ -1,0 +1,81 @@
+* ******************************************************************************
+
+* iCEcube Placer
+
+* Version:            2017.01.27914
+
+* Build Date:         Jan 12 2017 18:49:50
+
+* File Generated:     Jul 15 2017 13:57:52
+
+* Purpose:            
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5 --outdir K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev --package SG48 --deviceMarketName iCE5LP2K --sdc-file K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ice40TH4K.lib --effort_level std --out-sdc-file K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer\top_ice5_pl.sdc
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev
+Package              - SG48
+Design database      - K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5
+SDC file             - K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer
+Timing library       - C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ice40TH4K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	0
+    Number of DFFs      	:	0
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	0
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	38
+    Number of GBIOs     	:	0
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+    Number of I2Cs      	:	0
+    Number of SPIs      	:	0
+    Number of DSPs     	:	0
+    Number of SBIOODs     	:	0
+    Number of LEDDRVs     	:	0
+    Number of RGBDRVs     	:	0
+    Number of LEDDIPs     	:	0
+    Number of IRDRVs     	:	0
+    Number of LFOSCs     	:	0
+    Number of HFOSCs     	:	0
+    LUT utilization    	:	0/2048
+
+
+Phase 1
+I2077: Start design legalization
+I3013: Unable to fit the design into the selected device/package
+DEVICE IO Count:
+ (a) Regular IOs (SB_IO/SB_GB_IO) on the chip  - 32
+ (b) SPI IOs on the chip                       - 4
+ (c) Open Drain IOs (SB_IO_OD) on the chip     - 4
+                                               ------
+ Total IO Capacity of Chip (a + b + c)         - 40
+                                               ------
+DESIGN IO Count:
+ (a) Regular IOs(auto placement)            - 34
+ (b) SPI Constrained IOs in the design      - 4
+ (c) Open Drain IOs                         - 0
+                                            ------
+ Total IO count of the design (a + b + c)   - 38
+                                            ------
+E2081: Feasibility check for IO Placement failed
+E2080: Design legalizer failed: Design can not be legalized
+E2055: Error while doing placement of the design

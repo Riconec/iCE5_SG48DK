@@ -1,0 +1,12 @@
+@P:  Worst Slack : 156.320
+@P:  top|o_clk_out_inferred_clock - Estimated Frequency : 96.9 MHz
+@P:  top|o_clk_out_inferred_clock - Requested Frequency : 6.0 MHz
+@P:  top|o_clk_out_inferred_clock - Estimated Period : 10.320
+@P:  top|o_clk_out_inferred_clock - Requested Period : 166.640
+@P:  top|o_clk_out_inferred_clock - Slack : 156.320
+@P: top Part : ice5lp2ksg48
+@P: top I/O primitives : 1
+@P: top I/O Register bits : 0
+@P: top Register bits (Non I/O) : 22 (1%)
+@P: top Total Luts : 29 (1%)
+@P:  CPU Time : 0h:00m:04s

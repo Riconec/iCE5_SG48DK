@@ -1,0 +1,2 @@
+@E: CS160 :"K:\Cloud\Projects\Lattice FPGA\Projects\HFOSC_TEST\top.v":4:5:4:9|Bad or missing port direction for 'o_led'
+

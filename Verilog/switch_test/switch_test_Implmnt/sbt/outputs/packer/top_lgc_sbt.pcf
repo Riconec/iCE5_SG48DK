@@ -1,0 +1,58 @@
+set_location IN_MUX_bfv_16_20_0_ 16 20 0 #ICE_CARRY_IN_MUX
+set_location un1_i_switch_cry_5_THRU_LUT4_0 16 20 6 #SB_LUT4
+set_location un1_i_switch_cry_4_THRU_LUT4_0 16 20 5 #SB_LUT4
+set_location un1_i_switch_cry_3_THRU_LUT4_0 16 20 4 #SB_LUT4
+set_location un1_i_switch_cry_2_THRU_LUT4_0 16 20 3 #SB_LUT4
+set_location un1_i_switch_cry_1_THRU_LUT4_0 16 20 2 #SB_LUT4
+set_location un1_i_switch_cry_0_THRU_LUT4_0 16 20 1 #SB_LUT4
+set_location o_leds_obuf_7LegalizeSB_DFF 7 1 2 #SB_DFF
+set_location o_leds_obuf_7ConstOneLUT4 7 1 2 #SB_LUT4
+set_location o_leds_obuf_6LegalizeSB_DFF 7 1 1 #SB_DFF
+set_location o_leds_obuf_6ConstOneLUT4 7 1 1 #SB_LUT4
+set_location o_leds_obuf_5LegalizeSB_DFF 4 1 0 #SB_DFF
+set_location o_leds_obuf_5ConstOneLUT4 4 1 0 #SB_LUT4
+set_location o_leds_obuf_4LegalizeSB_DFF 7 1 0 #SB_DFF
+set_location o_leds_obuf_4ConstOneLUT4 7 1 0 #SB_LUT4
+set_location o_leds_obuf_3LegalizeSB_DFF 8 20 3 #SB_DFF
+set_location o_leds_obuf_3ConstOneLUT4 8 20 3 #SB_LUT4
+set_location o_leds_obuf_2LegalizeSB_DFF 8 20 2 #SB_DFF
+set_location o_leds_obuf_2ConstOneLUT4 8 20 2 #SB_LUT4
+set_location o_leds_obuf_1LegalizeSB_DFF 8 20 1 #SB_DFF
+set_location o_leds_obuf_1ConstOneLUT4 8 20 1 #SB_LUT4
+set_location o_leds_obuf_0LegalizeSB_DFF 8 20 0 #SB_DFF
+set_location o_leds_obuf_0ConstOneLUT4 8 20 0 #SB_LUT4
+set_location un1_i_switch_cry_1_c 16 20 1 #SB_CARRY
+set_location o_leds_obuf_RNO[3] 15 20 4 #SB_LUT4
+set_location un1_i_switch_cry_6_c 16 20 6 #SB_CARRY
+set_location o_leds_obuf_RNO[2] 15 20 3 #SB_LUT4
+set_location GND -1 -1 -1 #GND
+set_location un1_i_switch_cry_4_c 16 20 4 #SB_CARRY
+set_location o_leds_obuf_RNO[5] 16 19 6 #SB_LUT4
+set_location un1_i_switch_cry_3_c 16 20 3 #SB_CARRY
+set_location un1_i_switch_cry_0_c 16 20 0 #SB_CARRY
+set_location o_leds_obuf_RNO[4] 16 19 1 #SB_LUT4
+set_location o_leds_obuf_RNO[7] 16 20 7 #SB_LUT4
+set_location o_leds_obuf_RNO[6] 16 19 3 #SB_LUT4
+set_location o_leds_obuf_RNO[1] 15 20 0 #SB_LUT4
+set_location i_p21but_ibuf_RNITRAP 15 20 1 #SB_LUT4
+set_location un1_i_switch_cry_5_c 16 20 5 #SB_CARRY
+set_location un1_i_switch_cry_2_c 16 20 2 #SB_CARRY
+set_location o_leds_obuf_RNO[0] 15 20 2 #SB_LUT4
+set_io o_leds[6] 47
+set_io i_switch[6] 32
+set_io o_leds[7] 48
+set_io o_leds[3] 43
+set_io i_switch[7] 34
+set_io i_switch[3] 27
+set_io o_leds[4] 45
+set_io o_leds[0] 36
+set_io i_switch[4] 28
+set_io i_switch[0] 23
+set_io o_leds[5] 46
+set_io o_leds[1] 38
+set_io i_switch[5] 31
+set_io i_switch[1] 25
+set_io i_p21but 21
+set_io o_leds[2] 42
+set_io i_switch[2] 26
+set_io i_p19but 19

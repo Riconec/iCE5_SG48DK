@@ -410,12 +410,12 @@ ARM Macro Assembler    Page 7
               00000000 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M0 --apcs=interw
-ork --depend=spi_cdc\startup_stm32f070x6.d -ospi_cdc\startup_stm32f070x6.o -IC:
-\Users\Rico\Documents\GitHub\iCE5_SG48DK\STM32\SPI_CDC\MDK-ARM\RTE -IC:\Keil_v5
-\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F
-0xx_DFP\1.5.0\Device\Include --predefine="__MICROLIB SETA 1" --predefine="__UVI
-SION_VERSION SETA 518" --predefine="_RTE_ SETA 1" --predefine="STM32F070x6 SETA
- 1" --list=startup_stm32f070x6.lst startup_stm32f070x6.s
+ork --depend=spi_cdc\startup_stm32f070x6.d -ospi_cdc\startup_stm32f070x6.o -I.\
+RTE\_SPI_CDC -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include -IC:\Keil_v5\A
+RM\PACK\Keil\STM32F0xx_DFP\1.5.0\Device\Include --predefine="__EVAL SETA 1" --p
+redefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 523" --predefi
+ne="_RTE_ SETA 1" --predefine="STM32F070x6 SETA 1" --list=startup_stm32f070x6.l
+st startup_stm32f070x6.s
 
 
 
@@ -882,4 +882,4 @@ Symbol: __main
       At line 166 in file startup_stm32f070x6.s
 Comment: __main used once
 2 symbols
-382 symbols in table
+383 symbols in table

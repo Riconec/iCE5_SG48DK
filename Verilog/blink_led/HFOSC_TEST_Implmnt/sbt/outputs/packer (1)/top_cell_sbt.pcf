@@ -1,0 +1,46 @@
+ble_pack CONSTANT_ONE_LUT4_LC_1_20_4 { CONSTANT_ONE_LUT4 }
+clb_pack LT_1_20 { CONSTANT_ONE_LUT4_LC_1_20_4 }
+set_location LT_1_20 1 20
+ble_pack counter_0_LC_2_11_0 { counter_RNO[0], counter[0], counter_cry_c[0] }
+ble_pack counter_1_LC_2_11_1 { counter_RNO[1], counter[1], counter_cry_c[1] }
+ble_pack counter_2_LC_2_11_2 { counter_RNO[2], counter[2], counter_cry_c[2] }
+ble_pack counter_3_LC_2_11_3 { counter_RNO[3], counter[3], counter_cry_c[3] }
+ble_pack counter_4_LC_2_11_4 { counter_RNO[4], counter[4], counter_cry_c[4] }
+ble_pack counter_5_LC_2_11_5 { counter_RNO[5], counter[5], counter_cry_c[5] }
+ble_pack counter_6_LC_2_11_6 { counter_RNO[6], counter[6], counter_cry_c[6] }
+ble_pack counter_7_LC_2_11_7 { counter_RNO[7], counter[7], counter_cry_c[7] }
+clb_pack LT_2_11 { counter_0_LC_2_11_0, counter_1_LC_2_11_1, counter_2_LC_2_11_2, counter_3_LC_2_11_3, counter_4_LC_2_11_4, counter_5_LC_2_11_5, counter_6_LC_2_11_6, counter_7_LC_2_11_7 }
+set_location LT_2_11 2 11
+ble_pack counter_8_LC_2_12_0 { counter_RNO[8], counter[8], counter_cry_c[8] }
+ble_pack counter_9_LC_2_12_1 { counter_RNO[9], counter[9], counter_cry_c[9] }
+ble_pack counter_10_LC_2_12_2 { counter_RNO[10], counter[10], counter_cry_c[10] }
+ble_pack counter_11_LC_2_12_3 { counter_RNO[11], counter[11], counter_cry_c[11] }
+ble_pack counter_12_LC_2_12_4 { counter_RNO[12], counter[12], counter_cry_c[12] }
+ble_pack counter_13_LC_2_12_5 { counter_RNO[13], counter[13], counter_cry_c[13] }
+ble_pack counter_14_LC_2_12_6 { counter_RNO[14], counter[14], counter_cry_c[14] }
+ble_pack counter_15_LC_2_12_7 { counter_RNO[15], counter[15], counter_cry_c[15] }
+clb_pack LT_2_12 { counter_8_LC_2_12_0, counter_9_LC_2_12_1, counter_10_LC_2_12_2, counter_11_LC_2_12_3, counter_12_LC_2_12_4, counter_13_LC_2_12_5, counter_14_LC_2_12_6, counter_15_LC_2_12_7 }
+set_location LT_2_12 2 12
+ble_pack counter_16_LC_2_13_0 { counter_RNO[16], counter[16], counter_cry_c[16] }
+ble_pack counter_17_LC_2_13_1 { counter_RNO[17], counter[17], counter_cry_c[17] }
+ble_pack counter_18_LC_2_13_2 { counter_RNO[18], counter[18], counter_cry_c[18] }
+ble_pack counter_19_LC_2_13_3 { counter_RNO[19], counter[19], counter_cry_c[19] }
+ble_pack counter_20_LC_2_13_4 { counter_RNO[20], counter[20] }
+clb_pack LT_2_13 { counter_16_LC_2_13_0, counter_17_LC_2_13_1, counter_18_LC_2_13_2, counter_19_LC_2_13_3, counter_20_LC_2_13_4 }
+set_location LT_2_13 2 13
+ble_pack o_led_RNO_2_LC_3_11_0 { o_led_RNO_2 }
+ble_pack o_ledZ0_LC_3_11_1 { o_led_RNO, o_led }
+ble_pack o_led_RNO_6_LC_3_11_2 { o_led_RNO_6 }
+ble_pack o_led_RNO_0_LC_3_11_5 { o_led_RNO_0 }
+clb_pack LT_3_11 { o_led_RNO_2_LC_3_11_0, o_ledZ0_LC_3_11_1, o_led_RNO_6_LC_3_11_2, o_led_RNO_0_LC_3_11_5 }
+set_location LT_3_11 3 11
+ble_pack o_led_RNO_5_LC_3_12_0 { o_led_RNO_5 }
+ble_pack o_led_RNO_4_LC_3_12_1 { o_led_RNO_4 }
+ble_pack o_led_RNO_3_LC_3_12_2 { o_led_RNO_3 }
+ble_pack o_led_RNO_1_LC_3_12_5 { o_led_RNO_1 }
+clb_pack LT_3_12 { o_led_RNO_5_LC_3_12_0, o_led_RNO_4_LC_3_12_1, o_led_RNO_3_LC_3_12_2, o_led_RNO_1_LC_3_12_5 }
+set_location LT_3_12 3 12
+ble_pack o_led_obufLegalizeSB_DFF_LC_7_1_0 { o_led_obufConstOneLUT4, o_led_obufLegalizeSB_DFF }
+clb_pack LT_7_1 { o_led_obufLegalizeSB_DFF_LC_7_1_0 }
+set_location LT_7_1 7 1
+set_io o_led 48

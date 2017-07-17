@@ -1,0 +1,15 @@
+OUTPUT o_leds[5] 	 location (5, 0, 0) 	 46 	 SB_LVCMOS
+OUTPUT o_leds[6] 	 location (6, 0, 0) 	 47 	 SB_LVCMOS
+OUTPUT LEDG 	 location (5, 21, 0) 	 40 	 
+OUTPUT o_leds[7] 	 location (7, 0, 0) 	 48 	 SB_LVCMOS
+OUTPUT o_leds[3] 	 location (9, 21, 0) 	 43 	 SB_LVCMOS
+OUTPUT o_leds[4] 	 location (7, 0, 1) 	 45 	 SB_LVCMOS
+OUTPUT o_leds[0] 	 location (9, 21, 1) 	 36 	 SB_LVCMOS
+INPUT  i_switch[0] 	 location (19, 21, 0) 	 23 	 SB_LVCMOS
+OUTPUT o_leds[1] 	 location (8, 21, 1) 	 38 	 SB_LVCMOS
+INPUT  i_switch[1] 	 location (19, 21, 1) 	 25 	 SB_LVCMOS
+OUTPUT LEDR 	 location (4, 21, 0) 	 41 	 
+OUTPUT LEDB 	 location (6, 21, 0) 	 39 	 
+OUTPUT o_leds[2] 	 location (8, 21, 0) 	 42 	 SB_LVCMOS
+INPUT  i_switch[2] 	 location (18, 21, 0) 	 26 	 SB_LVCMOS
+INPUT  i_p19but 	 location (21, 0, 1) 	 19 	 SB_LVCMOS

@@ -1,0 +1,2 @@
+@E: CG243 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":37:1:37:5|Expecting ) or comma delimiter
+

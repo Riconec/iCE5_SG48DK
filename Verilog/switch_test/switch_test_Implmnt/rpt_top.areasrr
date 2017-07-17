@@ -1,0 +1,27 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE5LP2KSG48 (Lattice)
+
+-------------------------------------------------------------------
+########   Utilization report for  Top level view:   top   ########
+===================================================================
+
+COMBINATIONAL LOGIC
+Name       Total elements     Utilization     Notes
+---------------------------------------------------
+LUTS       9                  100 %                
+CARRYS     7                  100 %                
+===================================================
+Total COMBINATIONAL LOGIC in the block top:	16 (44.44 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     18                 100 %                
+=================================================
+Total IO PADS in the block top:	18 (50.00 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

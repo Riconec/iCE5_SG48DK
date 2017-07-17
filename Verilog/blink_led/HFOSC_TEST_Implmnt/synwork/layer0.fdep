@@ -1,0 +1,17 @@
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\Drive\\Projects\\Lattice FPGA\\Projects\\HFOSC_TEST\\HFOSC_TEST_Implmnt\\synwork\\HFOSC_TEST_comp.srs|-prodtype|synplify_pro|-primux|-fixsmult|-infer_seqShift|-ice|-sdff_counter|-nram|-divnmod|-I|D:\\Drive\\Projects\\Lattice FPGA\\Projects\\HFOSC_TEST\\|-I|C:\\lscc\\iCEcube2.2017.01\\synpbase\\lib|-v2001|-devicelib|C:\\lscc\\iCEcube2.2017.01\\synpbase\\lib\\generic\\sb_ice40.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work"
+#CUR:"C:\\lscc\\iCEcube2.2017.01\\synpbase\\bin64\\c_ver.exe":1487832701
+#CUR:"C:\\lscc\\iCEcube2.2017.01\\synpbase\\lib\\generic\\sb_ice40.v":1487832717
+#CUR:"C:\\lscc\\iCEcube2.2017.01\\synpbase\\lib\\vlog\\hypermods.v":1487832728
+#CUR:"C:\\lscc\\iCEcube2.2017.01\\synpbase\\lib\\vlog\\umr_capim.v":1487832728
+#CUR:"C:\\lscc\\iCEcube2.2017.01\\synpbase\\lib\\vlog\\scemi_objects.v":1487832728
+#CUR:"C:\\lscc\\iCEcube2.2017.01\\synpbase\\lib\\vlog\\scemi_pipes.svh":1487832728
+#CUR:"D:\\Drive\\Projects\\Lattice FPGA\\Projects\\HFOSC_TEST\\top.v":1491248722
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\top.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+#Dependency Lists(Users Of)
+0 -1
+#Design Unit to File Association
+module work top 0

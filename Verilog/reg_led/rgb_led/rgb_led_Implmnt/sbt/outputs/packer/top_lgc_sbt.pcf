@@ -1,0 +1,30 @@
+set_location CONSTANT_ONE_LUT4 1 20 0 #SB_LUT4
+set_location o_leds_obuf_7LegalizeSB_DFF 7 1 2 #SB_DFF
+set_location o_leds_obuf_7ConstOneLUT4 7 1 2 #SB_LUT4
+set_location o_leds_obuf_6LegalizeSB_DFF 7 1 1 #SB_DFF
+set_location o_leds_obuf_6ConstOneLUT4 7 1 1 #SB_LUT4
+set_location o_leds_obuf_5LegalizeSB_DFF 4 1 0 #SB_DFF
+set_location o_leds_obuf_5ConstOneLUT4 4 1 0 #SB_LUT4
+set_location o_leds_obuf_4LegalizeSB_DFF 7 1 0 #SB_DFF
+set_location o_leds_obuf_4ConstOneLUT4 7 1 0 #SB_LUT4
+set_location o_leds_obuf_3LegalizeSB_DFF 8 20 3 #SB_DFF
+set_location o_leds_obuf_3ConstOneLUT4 8 20 3 #SB_LUT4
+set_location o_leds_obuf_2LegalizeSB_DFF 8 20 2 #SB_DFF
+set_location o_leds_obuf_2ConstOneLUT4 8 20 2 #SB_LUT4
+set_location o_leds_obuf_1LegalizeSB_DFF 8 20 1 #SB_DFF
+set_location o_leds_obuf_1ConstOneLUT4 8 20 1 #SB_LUT4
+set_location o_leds_obuf_0LegalizeSB_DFF 8 20 0 #SB_DFF
+set_location o_leds_obuf_0ConstOneLUT4 8 20 0 #SB_LUT4
+set_location GND -1 -1 -1 #GND
+set_io o_leds[5] 46
+set_io o_leds[6] 47
+set_io o_leds[7] 48
+set_io o_leds[3] 43
+set_io o_leds[4] 45
+set_io o_leds[0] 36
+set_io i_switch[0] 23
+set_io o_leds[1] 38
+set_io i_switch[1] 25
+set_io o_leds[2] 42
+set_io i_switch[2] 26
+set_io i_p19but 19

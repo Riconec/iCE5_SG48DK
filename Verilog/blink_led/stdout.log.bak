@@ -1,0 +1,78 @@
+Running in Lattice mode
+
+
+Starting:    C:\lscc\iCEcube2.2017.01\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\iCEcube2.2017.01\synpbase
+Hostname:    LAPOT
+Date:        Fri Jun 09 23:18:45 2017
+Version:     L-2016.09L+ice40
+
+Arguments:   -product synplify_pro -batch HFOSC_TEST_syn.prj
+ProductType: synplify_pro
+
+
+
+
+
+log file: "D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\HFOSC_TEST.srr"
+Running: HFOSC_TEST_Implmnt in foreground
+
+Running HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+
+Running: compile (Compile) on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+# Fri Jun 09 23:18:45 2017
+
+Running: compile_flow (Compile Process) on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+# Fri Jun 09 23:18:45 2017
+
+Running: compiler (Compile Input) on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+# Fri Jun 09 23:18:45 2017
+Copied D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synwork\HFOSC_TEST_comp.srs to D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\HFOSC_TEST.srs
+
+compiler completed
+# Fri Jun 09 23:18:47 2017
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+# Fri Jun 09 23:18:47 2017
+
+multi_srs_gen completed
+# Fri Jun 09 23:18:47 2017
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synwork\HFOSC_TEST_mult.srs to D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\HFOSC_TEST.srs
+Complete: Compile Process on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+
+Running: premap (Pre-mapping) on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+# Fri Jun 09 23:18:47 2017
+
+premap completed with warnings
+# Fri Jun 09 23:18:49 2017
+
+Return Code: 1
+Run Time:00h:00m:02s
+Complete: Compile on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+
+Running: map (Map) on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+# Fri Jun 09 23:18:49 2017
+License granted for 4 parallel jobs
+
+Running: fpga_mapper (Map & Optimize) on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+# Fri Jun 09 23:18:49 2017
+Copied D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synwork\HFOSC_TEST_m.srm to D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\HFOSC_TEST.srm
+
+fpga_mapper completed with warnings
+# Fri Jun 09 23:18:52 2017
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Map on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+Complete: Logic Synthesis on HFOSC_TEST_syn|HFOSC_TEST_Implmnt
+
+exit status=0
+
+exit status=0
+

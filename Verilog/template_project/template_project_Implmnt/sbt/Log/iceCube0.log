@@ -1,0 +1,2715 @@
+13:30:02
+"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:30:13 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@W: CG146 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Creating black box for empty module top_ice5
+
+@N: CG706 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected top-level module top_ice5 is a black box, ignoring black box ...
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":15:8:15:15|*Output LED7_P48 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":16:8:16:15|*Output LED6_P47 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":17:8:17:15|*Output LED5_P46 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":18:8:18:15|*Output LED4_P45 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":19:8:19:15|*Output LED3_P43 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":20:8:20:15|*Output LED2_P42 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":21:8:21:15|*Output LED1_P38 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":22:8:22:15|*Output LED0_P36 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":23:8:23:16|*Output RGB_R_P41 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":24:8:24:16|*Output RGB_G_P40 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":25:8:25:16|*Output RGB_B_P39 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:7:6:13|Input SW7_P34 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":7:7:7:13|Input SW6_P32 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":8:7:8:13|Input SW5_P31 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":9:7:9:13|Input SW4_P28 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":10:7:10:13|Input SW3_P27 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":11:7:11:13|Input SW2_P26 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":12:7:12:13|Input SW1_P25 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":13:7:13:13|Input SW0_P23 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:30:13 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:30:14 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:30:14 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:30:15 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:30:16 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Tristate driver LED7_P48 (in view: work.top_ice5(verilog)) on net LED7_P48 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:30:17 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:30:17 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":23:8:23:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@E: FX741 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Part ice5lp2k does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:30:18 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 8 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:37:48 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@W: CG146 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Creating black box for empty module top_ice5
+
+@N: CG706 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected top-level module top_ice5 is a black box, ignoring black box ...
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":15:8:15:15|*Output LED7_P48 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":16:8:16:15|*Output LED6_P47 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":17:8:17:15|*Output LED5_P46 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":18:8:18:15|*Output LED4_P45 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":19:8:19:15|*Output LED3_P43 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":20:8:20:15|*Output LED2_P42 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":21:8:21:15|*Output LED1_P38 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":22:8:22:15|*Output LED0_P36 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":23:8:23:16|*Output RGB_R_P41 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":24:8:24:16|*Output RGB_G_P40 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":25:8:25:16|*Output RGB_B_P39 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:7:6:13|Input SW7_P34 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":7:7:7:13|Input SW6_P32 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":8:7:8:13|Input SW5_P31 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":9:7:9:13|Input SW4_P28 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":10:7:10:13|Input SW3_P27 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":11:7:11:13|Input SW2_P26 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":12:7:12:13|Input SW1_P25 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":13:7:13:13|Input SW0_P23 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:37:48 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:37:48 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:37:48 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:37:50 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:37:50 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Tristate driver LED7_P48 (in view: work.top_ice5(verilog)) on net LED7_P48 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:37:51 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:37:51 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":23:8:23:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@E: FX741 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Part ice5lp2k does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:37:51 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 5 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:38:33 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@W: CG146 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Creating black box for empty module top_ice5
+
+@N: CG706 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected top-level module top_ice5 is a black box, ignoring black box ...
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":15:8:15:15|*Output LED7_P48 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":16:8:16:15|*Output LED6_P47 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":17:8:17:15|*Output LED5_P46 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":18:8:18:15|*Output LED4_P45 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":19:8:19:15|*Output LED3_P43 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":20:8:20:15|*Output LED2_P42 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":21:8:21:15|*Output LED1_P38 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":22:8:22:15|*Output LED0_P36 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":23:8:23:16|*Output RGB_R_P41 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":24:8:24:16|*Output RGB_G_P40 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":25:8:25:16|*Output RGB_B_P39 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:7:6:13|Input SW7_P34 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":7:7:7:13|Input SW6_P32 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":8:7:8:13|Input SW5_P31 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":9:7:9:13|Input SW4_P28 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":10:7:10:13|Input SW3_P27 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":11:7:11:13|Input SW2_P26 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":12:7:12:13|Input SW1_P25 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":13:7:13:13|Input SW0_P23 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:38:33 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:38:34 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:38:34 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:38:35 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:38:35 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Tristate driver LED7_P48 (in view: work.top_ice5(verilog)) on net LED7_P48 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:38:36 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:38:36 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":23:8:23:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@E: FX741 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Part ice5lp2k does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:38:37 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 5 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:41:44 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@W: CG146 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Creating black box for empty module top_ice5
+
+@N: CG706 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected top-level module top_ice5 is a black box, ignoring black box ...
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":15:8:15:15|*Output LED7_P48 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":16:8:16:15|*Output LED6_P47 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":17:8:17:15|*Output LED5_P46 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":18:8:18:15|*Output LED4_P45 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":19:8:19:15|*Output LED3_P43 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":20:8:20:15|*Output LED2_P42 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":21:8:21:15|*Output LED1_P38 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":22:8:22:15|*Output LED0_P36 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":23:8:23:16|*Output RGB_R_P41 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":24:8:24:16|*Output RGB_G_P40 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":25:8:25:16|*Output RGB_B_P39 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:7:6:13|Input SW7_P34 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":7:7:7:13|Input SW6_P32 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":8:7:8:13|Input SW5_P31 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":9:7:9:13|Input SW4_P28 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":10:7:10:13|Input SW3_P27 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":11:7:11:13|Input SW2_P26 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":12:7:12:13|Input SW1_P25 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":13:7:13:13|Input SW0_P23 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:41:44 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:41:44 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:41:44 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:41:46 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:41:46 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Tristate driver LED7_P48 (in view: work.top_ice5(verilog)) on net LED7_P48 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:41:46 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:41:47 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":23:8:23:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@E: FX741 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Part ice5lp2k does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:41:47 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 5 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:42:06 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@W: CG146 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Creating black box for empty module top_ice5
+
+@N: CG706 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected top-level module top_ice5 is a black box, ignoring black box ...
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":15:8:15:15|*Output LED7_P48 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":16:8:16:15|*Output LED6_P47 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":17:8:17:15|*Output LED5_P46 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":18:8:18:15|*Output LED4_P45 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":19:8:19:15|*Output LED3_P43 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":20:8:20:15|*Output LED2_P42 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":21:8:21:15|*Output LED1_P38 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":22:8:22:15|*Output LED0_P36 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":23:8:23:16|*Output RGB_R_P41 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":24:8:24:16|*Output RGB_G_P40 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":25:8:25:16|*Output RGB_B_P39 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:7:6:13|Input SW7_P34 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":7:7:7:13|Input SW6_P32 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":8:7:8:13|Input SW5_P31 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":9:7:9:13|Input SW4_P28 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":10:7:10:13|Input SW3_P27 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":11:7:11:13|Input SW2_P26 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":12:7:12:13|Input SW1_P25 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":13:7:13:13|Input SW0_P23 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:42:06 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:42:06 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:42:06 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:42:07 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:42:08 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Tristate driver LED7_P48 (in view: work.top_ice5(verilog)) on net LED7_P48 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:42:08 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:42:09 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":25:8:25:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":24:8:24:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":23:8:23:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":22:8:22:15|Tristate driver LED0_P36 (in view: work.top_ice5(verilog)) on net LED0_P36 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":21:8:21:15|Tristate driver LED1_P38 (in view: work.top_ice5(verilog)) on net LED1_P38 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":20:8:20:15|Tristate driver LED2_P42 (in view: work.top_ice5(verilog)) on net LED2_P42 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":19:8:19:15|Tristate driver LED3_P43 (in view: work.top_ice5(verilog)) on net LED3_P43 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":18:8:18:15|Tristate driver LED4_P45 (in view: work.top_ice5(verilog)) on net LED4_P45 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":17:8:17:15|Tristate driver LED5_P46 (in view: work.top_ice5(verilog)) on net LED5_P46 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":16:8:16:15|Tristate driver LED6_P47 (in view: work.top_ice5(verilog)) on net LED6_P47 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@E: FX741 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":15:8:15:15|Part ice5lp2k does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:42:09 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 5 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:43:21 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+@E: CG829 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":58:1:58:1|Unexpected ) after comma -- missing port in ANSI port list
+1 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:43:21 2017
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:43:21 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 2 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:43:50 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:13:6:14|Input SW is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:43:50 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:43:51 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:43:51 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:43:52 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:43:52 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:43:53 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:43:53 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 133MB)
+
+Writing Analyst data base K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 130MB peak: 133MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.edf
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 133MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Jul 15 13:43:55 2017
+#
+
+
+Top view:               top_ice5
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+---------------------------------------
+Resource Usage Report for top_ice5 
+
+Mapping to part: ice5lp2ksg48
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+Total load per clock:
+
+@S |Mapping Summary:
+Total  LUTs: 0 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 25MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:43:55 2017
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Current Implementation template_project_Implmnt its sbt path: K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 6 seconds
+
+
+"C:/lscc/iCEcube2.2017.01/sbt_backend/bin/win32/opt\edifparser.exe" "C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev" "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.edf " "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist" "-pSG48" -c -e --devicename iCE5LP2K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2017.01.27914
+Build Date:     Jan 12 2017 18:38:15
+
+Parsing edif file: K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.edf...
+start to read sdc/scf file K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.scf
+sdc_reader OK K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.scf
+Stored edif netlist at K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5...
+Warning: Removing the net 'SW[6]' becasue it is not driving any logic
+Warning: Removing the net 'SW[2]' becasue it is not driving any logic
+Warning: Removing the net 'SW[7]' becasue it is not driving any logic
+Warning: Removing the net 'SW[3]' becasue it is not driving any logic
+Warning: Removing the net 'BUTTON_P19' becasue it is not driving any logic
+Warning: Removing the net 'SW[4]' becasue it is not driving any logic
+Warning: Removing the net 'SW[0]' becasue it is not driving any logic
+Warning: Removing the net 'SW[5]' becasue it is not driving any logic
+Warning: Removing the net 'SW[1]' becasue it is not driving any logic
+Warning: Removing the net 'CLK25_P20' becasue it is not driving any logic
+Warning: Removing the net 'BUTTON_P21' becasue it is not driving any logic
+
+write Timing Constraint to K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: top_ice5
+
+EDF Parser run-time: 3 (sec)
+edif parser succeed.
+"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:47:07 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+@E: CG243 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":33:1:33:6|Expecting ) or comma delimiter
+1 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:47:07 2017
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:47:07 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 2 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:47:23 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+@E: CG243 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":37:1:37:5|Expecting ) or comma delimiter
+1 syntax errors
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:47:23 2017
+
+###########################################################]
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:47:23 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 2 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:47:36 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@W: CG360 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":33:8:33:16|Removing wire RGB_R_P41, as there is no assignment to it.
+@W: CG360 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":34:8:34:16|Removing wire RGB_G_P40, as there is no assignment to it.
+@W: CG360 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":35:8:35:16|Removing wire RGB_B_P39, as there is no assignment to it.
+@W: CG360 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":40:8:40:18|Removing wire HW_MISO_P14, as there is no assignment to it.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":33:8:33:16|*Output RGB_R_P41 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":34:8:34:16|*Output RGB_G_P40 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":35:8:35:16|*Output RGB_B_P39 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":40:8:40:18|*Output HW_MISO_P14 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:13:6:14|Input SW is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":37:7:37:15|Input HW_SS_P16 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":38:7:38:16|Input HW_SCK_P15 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":39:7:39:17|Input HW_MOSI_P17 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":42:7:42:15|Input IN_H7_P37 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":43:7:43:15|Input IN_H7_P35 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":45:7:45:14|Input IN_H6_P2 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":46:7:46:14|Input IN_H6_P3 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":47:7:47:14|Input IN_H6_P4 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":48:7:48:14|Input IN_H6_P6 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":49:7:49:14|Input IN_H6_P9 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":50:7:50:15|Input IN_H6_P10 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":51:7:51:15|Input IN_H6_P11 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":52:7:52:15|Input IN_H6_P12 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":53:7:53:15|Input IN_H6_P13 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":54:7:54:15|Input IN_H6_P18 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:47:36 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:47:36 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:47:36 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:47:37 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:47:38 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":40:8:40:18|Tristate driver HW_MISO_P14 (in view: work.top_ice5(verilog)) on net HW_MISO_P14 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":35:8:35:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":34:8:34:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":33:8:33:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":40:8:40:18|Tristate driver HW_MISO_P14 (in view: work.top_ice5(verilog)) on net HW_MISO_P14 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":35:8:35:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":34:8:34:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":33:8:33:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:47:38 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:47:39 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":40:8:40:18|Tristate driver HW_MISO_P14 (in view: work.top_ice5(verilog)) on net HW_MISO_P14 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":35:8:35:16|Tristate driver RGB_B_P39 (in view: work.top_ice5(verilog)) on net RGB_B_P39 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":34:8:34:16|Tristate driver RGB_G_P40 (in view: work.top_ice5(verilog)) on net RGB_G_P40 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":33:8:33:16|Tristate driver RGB_R_P41 (in view: work.top_ice5(verilog)) on net RGB_R_P41 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@E: FX741 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":33:8:33:16|Part ice5lp2k does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:47:39 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 5 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:48:05 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v changed - recompiling
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@W: CG360 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":40:8:40:18|Removing wire HW_MISO_P14, as there is no assignment to it.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":40:8:40:18|*Output HW_MISO_P14 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:13:6:14|Input SW is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":37:7:37:15|Input HW_SS_P16 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":38:7:38:16|Input HW_SCK_P15 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":39:7:39:17|Input HW_MOSI_P17 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":42:7:42:15|Input IN_H7_P37 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":43:7:43:15|Input IN_H7_P35 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":45:7:45:14|Input IN_H6_P2 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":46:7:46:14|Input IN_H6_P3 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":47:7:47:14|Input IN_H6_P4 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":48:7:48:14|Input IN_H6_P6 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":49:7:49:14|Input IN_H6_P9 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":50:7:50:15|Input IN_H6_P10 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":51:7:51:15|Input IN_H6_P11 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":52:7:52:15|Input IN_H6_P12 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":53:7:53:15|Input IN_H6_P13 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":54:7:54:15|Input IN_H6_P18 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:48:05 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:48:05 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:48:05 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:48:07 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:48:07 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":40:8:40:18|Tristate driver HW_MISO_P14 (in view: work.top_ice5(verilog)) on net HW_MISO_P14 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":40:8:40:18|Tristate driver HW_MISO_P14 (in view: work.top_ice5(verilog)) on net HW_MISO_P14 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:48:07 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:48:08 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@N: MO111 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":40:8:40:18|Tristate driver HW_MISO_P14 (in view: work.top_ice5(verilog)) on net HW_MISO_P14 (in view: work.top_ice5(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+@E: FX741 :"k:\drive\projects\lattice fpga\projects\template_project\top_wrapper.v":40:8:40:18|Part ice5lp2k does not support tristates
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:48:08 2017
+
+###########################################################]
+
+
+Synthesis exit by 2.
+Synthesis failed.
+Synthesis batch mode runtime 5 seconds"C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\synpwrap\synpwrap.exe" -prj "template_project_syn.prj" -log "template_project_Implmnt/template_project.srr"
+starting Synthesisrunning SynthesisCopyright (C) 1992-2014 Lattice Semiconductor Corporation. All rights reserved.
+
+==contents of template_project_Implmnt/template_project.srr
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2017.01\synpbase
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-AAV3UBS
+
+# Sat Jul 15 13:55:13 2017
+
+#Implementation: template_project_Implmnt
+
+Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2017.01\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v" (library work)
+Verilog syntax check successful!
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v changed - recompiling
+Selecting top level module top_ice5
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:13:6:14|Input SW is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":37:7:37:15|Input HW_SS_P16 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":38:7:38:16|Input HW_SCK_P15 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":39:7:39:17|Input HW_MOSI_P17 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":42:7:42:15|Input IN_H7_P37 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":43:7:43:15|Input IN_H7_P35 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":45:7:45:14|Input IN_H6_P2 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":46:7:46:14|Input IN_H6_P3 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":47:7:47:14|Input IN_H6_P4 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":48:7:48:14|Input IN_H6_P6 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":49:7:49:14|Input IN_H6_P9 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":50:7:50:15|Input IN_H6_P10 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":51:7:51:15|Input IN_H6_P11 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":52:7:52:15|Input IN_H6_P12 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":53:7:53:15|Input IN_H6_P13 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":54:7:54:15|Input IN_H6_P18 is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 71MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:55:13 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:55:13 2017
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:55:13 2017
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_comp.srs changed - recompiling
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jul 15 13:55:15 2017
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jul 15 13:55:15 2017
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A: MF827 |No constraint file specified.
+@L: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt 
+Printing clock  summary report in "K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=18  set on top level netlist top_ice5
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+
+
+Clock Summary
+*****************
+
+Start     Requested     Requested     Clock     Clock     Clock
+Clock     Frequency     Period        Type      Group     Load 
+---------------------------------------------------------------
+===============================================================
+
+Finished Pre Mapping Phase.
+@N: BN225 |Writing default property annotation file K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 134MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 47MB peak: 134MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:55:16 2017
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jul 15 13:55:16 2017
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 131MB peak: 133MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 133MB)
+
+Writing Analyst data base K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\synwork\template_project_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 130MB peak: 133MB)
+
+Writing EDIF Netlist and constraint files
+@N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
+@N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
+@N: FX1056 |Writing EDF file: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\template_project.edf
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 131MB peak: 133MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Jul 15 13:55:18 2017
+#
+
+
+Top view:               top_ice5
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: NA
+
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+--------------------------------------------------------------------------------------------------------
+Starting  Ending  |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+--------------------------------------------------------------------------------------------------------
+========================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 132MB peak: 133MB)
+
+---------------------------------------
+Resource Usage Report for top_ice5 
+
+Mapping to part: ice5lp2ksg48
+I/O Register bits:                  0
+Register bits not including I/Os:   0 (0%)
+Total load per clock:
+
+@S |Mapping Summary:
+Total  LUTs: 0 (0%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 24MB peak: 133MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Jul 15 13:55:18 2017
+
+###########################################################]
+
+
+Synthesis exit by 0.
+Current Implementation template_project_Implmnt its sbt path: K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt
+Synthesis succeed.
+Synthesis succeeded.
+Synthesis runtime 6 seconds
+
+
+"C:/lscc/iCEcube2.2017.01/sbt_backend/bin/win32/opt\edifparser.exe" "C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev" "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.edf " "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist" "-pSG48" "-yK:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\sbt\constraint\Pin_settings.pcf " -c -e --devicename iCE5LP2K
+starting edif parserrunning edif parserLattice Semiconductor Corporation  Edif Parser
+Release:        2017.01.27914
+Build Date:     Jan 12 2017 18:38:15
+
+Parsing edif file: K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.edf...
+Parsing constraint file: K:\Drive\Projects\Lattice FPGA\Projects\template_project\template_project\template_project_Implmnt\sbt\constraint\Pin_settings.pcf ...
+start to read sdc/scf file K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.scf
+sdc_reader OK K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt/template_project.scf
+Stored edif netlist at K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5...
+Warning: Removing the net 'SW[7]' becasue it is not driving any logic
+Warning: Removing the net 'SW[4]' becasue it is not driving any logic
+Warning: Removing the net 'IN_H7_P37' becasue it is not driving any logic
+Warning: Removing the net 'SW[5]' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P9' becasue it is not driving any logic
+Warning: Removing the net 'SW[6]' becasue it is not driving any logic
+Warning: Removing the net 'SW[2]' becasue it is not driving any logic
+Warning: Removing the net 'IN_H7_P35' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P6' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P2' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P18' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P10' becasue it is not driving any logic
+Warning: Removing the net 'HW_SCK_P15' becasue it is not driving any logic
+Warning: Removing the net 'HW_MOSI_P17' becasue it is not driving any logic
+Warning: Removing the net 'SW[3]' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P3' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P13' becasue it is not driving any logic
+Warning: Removing the net 'BUTTON_P19' becasue it is not driving any logic
+Warning: Removing the net 'SW[0]' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P4' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P12' becasue it is not driving any logic
+Warning: Removing the net 'HW_SS_P16' becasue it is not driving any logic
+Warning: Removing the net 'SW[1]' becasue it is not driving any logic
+Warning: Removing the net 'IN_H6_P11' becasue it is not driving any logic
+Warning: Removing the net 'CLK25_P20' becasue it is not driving any logic
+Warning: Removing the net 'BUTTON_P21' becasue it is not driving any logic
+
+write Timing Constraint to K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt/Temp/sbt_temp.sdc
+
+EDIF Parser succeeded
+Top module is: top_ice5
+
+EDF Parser run-time: 0 (sec)
+edif parser succeed.
+
+
+"C:/lscc/iCEcube2.2017.01/sbt_backend/bin/win32/opt\sbtplacer.exe" --des-lib "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5" --outdir "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer" --device-file "C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev" --package SG48 --deviceMarketName iCE5LP2K --sdc-file "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\Temp/sbt_temp.sdc" --lib-file "C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ice40TH4K.lib" --effort_level std --out-sdc-file "K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer\top_ice5_pl.sdc"
+starting placerrunning placerExecuting : C:\lscc\iCEcube2.2017.01\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5 --outdir K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev --package SG48 --deviceMarketName iCE5LP2K --sdc-file K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ice40TH4K.lib --effort_level std --out-sdc-file K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer\top_ice5_pl.sdc
+Lattice Semiconductor Corporation  Placer
+Release:        2017.01.27914
+Build Date:     Jan 12 2017 18:49:50
+
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev
+Package              - SG48
+Design database      - K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5
+SDC file             - K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\outputs\placer
+Timing library       - C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ice40TH4K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: K:/Drive/Projects/Lattice FPGA/Projects/template_project/template_project/template_project_Implmnt\sbt\netlist\oadb-top_ice5/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\lscc\iCEcube2.2017.01\sbt_backend\devices\ICE40T04.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	0
+    Number of DFFs      	:	0
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	0
+    Number of RAMs      	:	0
+    Number of ROMs      	:	0
+    Number of IOs       	:	38
+    Number of GBIOs     	:	0
+    Number of GBs       	:	0
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+    Number of I2Cs      	:	0
+    Number of SPIs      	:	0
+    Number of DSPs     	:	0
+    Number of SBIOODs     	:	0
+    Number of LEDDRVs     	:	0
+    Number of RGBDRVs     	:	0
+    Number of LEDDIPs     	:	0
+    Number of IRDRVs     	:	0
+    Number of LFOSCs     	:	0
+    Number of HFOSCs     	:	0
+    LUT utilization    	:	0/2048
+
+
+Phase 1
+I2077: Start design legalization
+I3013: Unable to fit the design into the selected device/package
+DEVICE IO Count:
+ (a) Regular IOs (SB_IO/SB_GB_IO) on the chip  - 32
+ (b) SPI IOs on the chip                       - 4
+ (c) Open Drain IOs (SB_IO_OD) on the chip     - 4
+                                               ------
+ Total IO Capacity of Chip (a + b + c)         - 40
+                                               ------
+DESIGN IO Count:
+ (a) Regular IOs(auto placement)            - 34
+ (b) SPI Constrained IOs in the design      - 4
+ (c) Open Drain IOs                         - 0
+                                            ------
+ Total IO count of the design (a + b + c)   - 38
+                                            ------
+E2081: Feasibility check for IO Placement failed
+E2080: Design legalizer failed: Design can not be legalized
+E2055: Error while doing placement of the design
+14:01:12

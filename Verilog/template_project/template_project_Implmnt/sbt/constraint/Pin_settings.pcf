@@ -1,0 +1,54 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2017.01.27914
+
+# File Generated:     Jul 15 2017 13:57:50
+
+# Family & Device:    iCE5LP2K
+
+# Package:            SG48
+
+# ##############################################################################
+
+###IOSet List 38
+set_io HW_SCK_P15 15 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P18 18 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P3 3 -io_std SB_LVCMOS -pullup no
+set_io LED[1] 38 -io_std SB_LVCMOS -pullup no
+set_io RGB_R_P41 41 -io_std SB_LVCMOS -pullup no
+set_io SW[4] 28 -io_std SB_LVCMOS -pullup no
+set_io HW_MOSI_P17 17 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P11 11 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P2 2 -io_std SB_LVCMOS -pullup no
+set_io LED[6] 47 -io_std SB_LVCMOS -pullup no
+set_io SW[7] 34 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P12 12 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P9 9 -io_std SB_LVCMOS -pullup no
+set_io IN_H7_P37 37 -io_std SB_LVCMOS -pullup no
+set_io LED[7] 48 -io_std SB_LVCMOS -pullup no
+set_io SW[6] 32 -io_std SB_LVCMOS -pullup no
+set_io HW_MISO_P14 14 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P13 13 -io_std SB_LVCMOS -pullup no
+set_io LED[4] 45 -io_std SB_LVCMOS -pullup no
+set_io RGB_G_P40 40 -io_std SB_LVCMOS -pullup no
+set_io SW[1] 25 -io_std SB_LVCMOS -pullup no
+set_io IN_H7_P35 35 -io_std SB_LVCMOS -pullup no
+set_io LED[5] 46 -io_std SB_LVCMOS -pullup no
+set_io SW[0] 23 -io_std SB_LVCMOS -pullup no
+set_io CLK25_P20 20 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P6 6 -io_std SB_LVCMOS -pullup no
+set_io LED[2] 42 -io_std SB_LVCMOS -pullup no
+set_io SW[3] 27 -io_std SB_LVCMOS -pullup no
+set_io BUTTON_P21 21 -io_std SB_LVCMOS -pullup no
+set_io HW_SS_P16 16 -io_std SB_LVCMOS -pullup no
+set_io LED[3] 43 -io_std SB_LVCMOS -pullup no
+set_io RGB_B_P39 39 -io_std SB_LVCMOS -pullup no
+set_io SW[2] 26 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P4 4 -io_std SB_LVCMOS -pullup no
+set_io LED[0] 36 -io_std SB_LVCMOS -pullup no
+set_io SW[5] 31 -io_std SB_LVCMOS -pullup no
+set_io BUTTON_P19 19 -io_std SB_LVCMOS -pullup no
+set_io IN_H6_P10 10 -io_std SB_LVCMOS -pullup no
+

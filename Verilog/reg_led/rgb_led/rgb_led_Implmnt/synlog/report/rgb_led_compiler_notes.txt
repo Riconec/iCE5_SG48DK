@@ -1,0 +1,10 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v":4110:7:4110:20|Synthesizing module SB_LED_DRV_CUR in library work.
+@N: CG364 :"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v":4036:7:4036:16|Synthesizing module SB_RGB_DRV in library work.
+@N: CG364 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":1:7:1:9|Synthesizing module top in library work.
+@N: CL159 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":4:7:4:14|Input i_p21but is unused.
+@N|Running in 64-bit mode
+@N: NF107 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":1:7:1:9|Selected library: work cell: top view verilog as top level
+@N: NF107 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":1:7:1:9|Selected library: work cell: top view verilog as top level
+

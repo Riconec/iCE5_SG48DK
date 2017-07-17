@@ -42,4 +42,6 @@ spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
 spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h
 spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h
 spi_cdc\main.o: ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h
+spi_cdc\main.o: ../Src/cdc_command_set.c
+spi_cdc\main.o: ../Src/m25pxx_flash.h
 spi_cdc\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h

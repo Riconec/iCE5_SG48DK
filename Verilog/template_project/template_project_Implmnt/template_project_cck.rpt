@@ -1,0 +1,99 @@
+# Synopsys Constraint Checker, version maplat, Build 1612R, built Dec  5 2016
+# Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Sat Jul 15 13:55:16 2017
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top_ice5"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------
+===================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:BUTTON_P19
+p:BUTTON_P21
+p:CLK25_P20
+p:HW_MISO_P14
+p:HW_MOSI_P17
+p:HW_SCK_P15
+p:HW_SS_P16
+p:IN_H6_P2
+p:IN_H6_P3
+p:IN_H6_P4
+p:IN_H6_P6
+p:IN_H6_P9
+p:IN_H6_P10
+p:IN_H6_P11
+p:IN_H6_P12
+p:IN_H6_P13
+p:IN_H6_P18
+p:IN_H7_P35
+p:IN_H7_P37
+p:LED[0]
+p:LED[1]
+p:LED[2]
+p:LED[3]
+p:LED[4]
+p:LED[5]
+p:LED[6]
+p:LED[7]
+p:RGB_B_P39
+p:RGB_G_P40
+p:RGB_R_P41
+p:SW[0]
+p:SW[1]
+p:SW[2]
+p:SW[3]
+p:SW[4]
+p:SW[5]
+p:SW[6]
+p:SW[7]
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

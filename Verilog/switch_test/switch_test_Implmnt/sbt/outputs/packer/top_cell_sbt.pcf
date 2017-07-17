@@ -1,0 +1,54 @@
+ble_pack o_leds_obuf_5LegalizeSB_DFF_LC_4_1_0 { o_leds_obuf_5ConstOneLUT4, o_leds_obuf_5LegalizeSB_DFF }
+clb_pack LT_4_1 { o_leds_obuf_5LegalizeSB_DFF_LC_4_1_0 }
+set_location LT_4_1 4 1
+ble_pack o_leds_obuf_4LegalizeSB_DFF_LC_7_1_0 { o_leds_obuf_4ConstOneLUT4, o_leds_obuf_4LegalizeSB_DFF }
+ble_pack o_leds_obuf_6LegalizeSB_DFF_LC_7_1_1 { o_leds_obuf_6ConstOneLUT4, o_leds_obuf_6LegalizeSB_DFF }
+ble_pack o_leds_obuf_7LegalizeSB_DFF_LC_7_1_2 { o_leds_obuf_7ConstOneLUT4, o_leds_obuf_7LegalizeSB_DFF }
+clb_pack LT_7_1 { o_leds_obuf_4LegalizeSB_DFF_LC_7_1_0, o_leds_obuf_6LegalizeSB_DFF_LC_7_1_1, o_leds_obuf_7LegalizeSB_DFF_LC_7_1_2 }
+set_location LT_7_1 7 1
+ble_pack o_leds_obuf_0LegalizeSB_DFF_LC_8_20_0 { o_leds_obuf_0ConstOneLUT4, o_leds_obuf_0LegalizeSB_DFF }
+ble_pack o_leds_obuf_1LegalizeSB_DFF_LC_8_20_1 { o_leds_obuf_1ConstOneLUT4, o_leds_obuf_1LegalizeSB_DFF }
+ble_pack o_leds_obuf_2LegalizeSB_DFF_LC_8_20_2 { o_leds_obuf_2ConstOneLUT4, o_leds_obuf_2LegalizeSB_DFF }
+ble_pack o_leds_obuf_3LegalizeSB_DFF_LC_8_20_3 { o_leds_obuf_3ConstOneLUT4, o_leds_obuf_3LegalizeSB_DFF }
+clb_pack LT_8_20 { o_leds_obuf_0LegalizeSB_DFF_LC_8_20_0, o_leds_obuf_1LegalizeSB_DFF_LC_8_20_1, o_leds_obuf_2LegalizeSB_DFF_LC_8_20_2, o_leds_obuf_3LegalizeSB_DFF_LC_8_20_3 }
+set_location LT_8_20 8 20
+ble_pack o_leds_obuf_RNO_1_LC_15_20_0 { o_leds_obuf_RNO[1] }
+ble_pack i_p21but_ibuf_RNITRAP_LC_15_20_1 { i_p21but_ibuf_RNITRAP }
+ble_pack o_leds_obuf_RNO_0_LC_15_20_2 { o_leds_obuf_RNO[0] }
+ble_pack o_leds_obuf_RNO_2_LC_15_20_3 { o_leds_obuf_RNO[2] }
+ble_pack o_leds_obuf_RNO_3_LC_15_20_4 { o_leds_obuf_RNO[3] }
+clb_pack LT_15_20 { o_leds_obuf_RNO_1_LC_15_20_0, i_p21but_ibuf_RNITRAP_LC_15_20_1, o_leds_obuf_RNO_0_LC_15_20_2, o_leds_obuf_RNO_2_LC_15_20_3, o_leds_obuf_RNO_3_LC_15_20_4 }
+set_location LT_15_20 15 20
+ble_pack o_leds_obuf_RNO_4_LC_16_19_1 { o_leds_obuf_RNO[4] }
+ble_pack o_leds_obuf_RNO_6_LC_16_19_3 { o_leds_obuf_RNO[6] }
+ble_pack o_leds_obuf_RNO_5_LC_16_19_6 { o_leds_obuf_RNO[5] }
+clb_pack LT_16_19 { o_leds_obuf_RNO_4_LC_16_19_1, o_leds_obuf_RNO_6_LC_16_19_3, o_leds_obuf_RNO_5_LC_16_19_6 }
+set_location LT_16_19 16 19
+ble_pack un1_i_switch_cry_0_c_LC_16_20_0 { un1_i_switch_cry_0_c }
+ble_pack un1_i_switch_cry_0_THRU_LUT4_0_LC_16_20_1 { un1_i_switch_cry_0_THRU_LUT4_0, un1_i_switch_cry_1_c }
+ble_pack un1_i_switch_cry_1_THRU_LUT4_0_LC_16_20_2 { un1_i_switch_cry_1_THRU_LUT4_0, un1_i_switch_cry_2_c }
+ble_pack un1_i_switch_cry_2_THRU_LUT4_0_LC_16_20_3 { un1_i_switch_cry_2_THRU_LUT4_0, un1_i_switch_cry_3_c }
+ble_pack un1_i_switch_cry_3_THRU_LUT4_0_LC_16_20_4 { un1_i_switch_cry_3_THRU_LUT4_0, un1_i_switch_cry_4_c }
+ble_pack un1_i_switch_cry_4_THRU_LUT4_0_LC_16_20_5 { un1_i_switch_cry_4_THRU_LUT4_0, un1_i_switch_cry_5_c }
+ble_pack un1_i_switch_cry_5_THRU_LUT4_0_LC_16_20_6 { un1_i_switch_cry_5_THRU_LUT4_0, un1_i_switch_cry_6_c }
+ble_pack o_leds_obuf_RNO_7_LC_16_20_7 { o_leds_obuf_RNO[7] }
+clb_pack LT_16_20 { un1_i_switch_cry_0_c_LC_16_20_0, un1_i_switch_cry_0_THRU_LUT4_0_LC_16_20_1, un1_i_switch_cry_1_THRU_LUT4_0_LC_16_20_2, un1_i_switch_cry_2_THRU_LUT4_0_LC_16_20_3, un1_i_switch_cry_3_THRU_LUT4_0_LC_16_20_4, un1_i_switch_cry_4_THRU_LUT4_0_LC_16_20_5, un1_i_switch_cry_5_THRU_LUT4_0_LC_16_20_6, o_leds_obuf_RNO_7_LC_16_20_7 }
+set_location LT_16_20 16 20
+set_io o_leds[6] 47
+set_io i_switch[6] 32
+set_io o_leds[7] 48
+set_io o_leds[3] 43
+set_io i_switch[7] 34
+set_io i_switch[3] 27
+set_io o_leds[4] 45
+set_io o_leds[0] 36
+set_io i_switch[4] 28
+set_io i_switch[0] 23
+set_io o_leds[5] 46
+set_io o_leds[1] 38
+set_io i_switch[5] 31
+set_io i_switch[1] 25
+set_io i_p21but 21
+set_io o_leds[2] 42
+set_io i_switch[2] 26
+set_io i_p19but 19

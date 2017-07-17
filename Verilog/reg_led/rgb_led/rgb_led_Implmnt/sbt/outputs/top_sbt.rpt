@@ -1,0 +1,116 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2017.01.27914
+
+* Build Date:         Jan 12 2017 18:38:54
+
+* File Generated:     Jun 29 2017 23:36:31
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 2 seconds
+
+Device Info:
+------------
+    Device Family: iCE5LP
+    Device:        iCE5LP2K
+    Package:       SG48
+
+Design statistics:
+------------------
+    FFs:                  8
+    LUTs:                 9
+    RAMs:                 0
+    IOBs:                 12
+    GBs:                  0
+    PLLs:                 0
+    Warm Boots:           0
+    SPIs:                 0
+    I2Cs:                 0
+    HFOSCs:               0
+    LFOSCs:               0
+    RGB_DRVs:             1
+    IR_DRVs:              0
+    LED_DRV_CURs:         1
+    LEDD_IPs:             0
+    DSPs:                 0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 9/2048
+        Combinational Logic Cells: 1        out of   2048      0.0488281%
+        Sequential Logic Cells:    8        out of   2048      0.390625%
+        Logic Tiles:               4        out of   440       0.909091%
+    Registers: 
+        Logic Registers:           8        out of   2048      0.390625%
+        IO Registers:              0        out of   480       0
+    Block RAMs:                    0        out of   20        0%
+    Warm Boots:                    0        out of   1         0%
+    SPIs:                          0        out of   2         0%
+    I2Cs:                          0        out of   2         0%
+    HFOSCs:                        0        out of   1         0%
+    LFOSCs:                        0        out of   1         0%
+    RGB_DRVs:                      1        out of   1         100%
+    IR_DRVs:                       0        out of   1         0%
+    LED_DRV_CURs:                  1        out of   1         100%
+    LEDD_IPs:                      0        out of   1         0%
+    DSPs:                          0        out of   4         0%
+    Pins:
+        Input Pins:                4        out of   39        10.2564%
+        Output Pins:               8        out of   39        20.5128%
+        InOut Pins:                0        out of   39        0%
+    Global Buffers:                0        out of   8         0%
+    PLLs:                          0        out of   1         0%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 0        out of   0         0%
+    Bank 1: 0        out of   0         0%
+    Bank 0: 7        out of   17        41.1765%
+    Bank 2: 5        out of   22        22.7273%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name  
+    ----------  ---------  -----------  -------  -------  -----------                   -----------  
+    19          Input      SB_LVCMOS    No       2        Simple Input                  i_p19but     
+    23          Input      SB_LVCMOS    No       0        Simple Input                  i_switch[0]  
+    25          Input      SB_LVCMOS    No       0        Simple Input                  i_switch[1]  
+    26          Input      SB_LVCMOS    No       0        Simple Input                  i_switch[2]  
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                   Signal Name  
+    ----------  ---------  -----------  -------  -------  -----------                   -----------  
+    36          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  o_leds[0]    
+    38          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  o_leds[1]    
+    42          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  o_leds[2]    
+    43          Output     SB_LVCMOS    No       0        Output Tristatable by Enable  o_leds[3]    
+    45          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  o_leds[4]    
+    46          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  o_leds[5]    
+    47          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  o_leds[6]    
+    48          Output     SB_LVCMOS    No       2        Output Tristatable by Enable  o_leds[7]    
+
+
+
+Router Summary:
+---------------
+    Status:  Successful
+    Runtime: 23 seconds
+
+Routing Resource Utilization:
+-----------------------------
+              Local line of tile       46 out of  74681      0.0615953%
+                          Span 4       16 out of  15808      0.101215%
+                         Span 12       12 out of   3184      0.376884%
+      Vertical Inter-LUT Connect        0 out of   3080      0%
+

@@ -1,0 +1,11 @@
+Selecting top level module top
+@N: CG364 :"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v":4110:7:4110:20|Synthesizing module SB_LED_DRV_CUR in library work.
+
+@N: CG364 :"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v":4036:7:4036:16|Synthesizing module SB_RGB_DRV in library work.
+
+@N: CG364 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":1:7:1:9|Synthesizing module top in library work.
+
+@W: CG133 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":2:18:2:23|Object o_leds is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL246 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":3:13:3:20|Input port bits 7 to 3 of i_switch[7:0] are unused. Assign logic for all port bits or change the input port size.
+@A: CL153 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":2:18:2:23|*Unassigned bits of o_leds[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL159 :"D:\Drive\Projects\Lattice FPGA\Projects\reg_led\top.v":4:7:4:14|Input i_p21but is unused.

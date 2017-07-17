@@ -1,0 +1,37 @@
+ble_pack counter[0]_LC_0 {counter[0], counter_cry_c[0], counter_RNO[0]}
+ble_pack counter[1]_LC_1 {counter[1], counter_cry_c[1], counter_RNO[1]}
+ble_pack counter[2]_LC_12 {counter[2], counter_cry_c[2], counter_RNO[2]}
+ble_pack counter[3]_LC_14 {counter[3], counter_cry_c[3], counter_RNO[3]}
+ble_pack counter[4]_LC_15 {counter[4], counter_cry_c[4], counter_RNO[4]}
+ble_pack counter[5]_LC_16 {counter[5], counter_cry_c[5], counter_RNO[5]}
+ble_pack counter[6]_LC_17 {counter[6], counter_cry_c[6], counter_RNO[6]}
+ble_pack counter[7]_LC_18 {counter[7], counter_cry_c[7], counter_RNO[7]}
+clb_pack PLB_0 {counter[0]_LC_0, counter[1]_LC_1, counter[2]_LC_12, counter[3]_LC_14, counter[4]_LC_15, counter[5]_LC_16, counter[6]_LC_17, counter[7]_LC_18}
+ble_pack counter[8]_LC_19 {counter[8], counter_cry_c[8], counter_RNO[8]}
+ble_pack counter[9]_LC_20 {counter[9], counter_cry_c[9], counter_RNO[9]}
+ble_pack counter[10]_LC_2 {counter[10], counter_cry_c[10], counter_RNO[10]}
+ble_pack counter[11]_LC_3 {counter[11], counter_cry_c[11], counter_RNO[11]}
+ble_pack counter[12]_LC_4 {counter[12], counter_cry_c[12], counter_RNO[12]}
+ble_pack counter[13]_LC_5 {counter[13], counter_cry_c[13], counter_RNO[13]}
+ble_pack counter[14]_LC_6 {counter[14], counter_cry_c[14], counter_RNO[14]}
+ble_pack counter[15]_LC_7 {counter[15], counter_cry_c[15], counter_RNO[15]}
+clb_pack PLB_1 {counter[8]_LC_19, counter[9]_LC_20, counter[10]_LC_2, counter[11]_LC_3, counter[12]_LC_4, counter[13]_LC_5, counter[14]_LC_6, counter[15]_LC_7}
+ble_pack counter[16]_LC_8 {counter[16], counter_cry_c[16], counter_RNO[16]}
+ble_pack counter[17]_LC_9 {counter[17], counter_cry_c[17], counter_RNO[17]}
+ble_pack counter[18]_LC_10 {counter[18], counter_cry_c[18], counter_RNO[18]}
+ble_pack counter[19]_LC_11 {counter[19], counter_cry_c[19], counter_RNO[19]}
+ble_pack counter[20]_LC_13 {counter[20], counter_RNO[20]}
+clb_pack PLB_2 {counter[16]_LC_8, counter[17]_LC_9, counter[18]_LC_10, counter[19]_LC_11, counter[20]_LC_13}
+ble_pack o_led_RNO_0_LC_22 {o_led_RNO_0}
+ble_pack o_led_LC_21 {o_led, o_led_RNO}
+ble_pack o_led_RNO_2_LC_24 {o_led_RNO_2}
+ble_pack o_led_RNO_4_LC_26 {o_led_RNO_4}
+ble_pack o_led_RNO_5_LC_27 {o_led_RNO_5}
+ble_pack o_led_RNO_6_LC_28 {o_led_RNO_6}
+clb_pack PLB_3 {o_led_RNO_0_LC_22, o_led_LC_21, o_led_RNO_2_LC_24, o_led_RNO_4_LC_26, o_led_RNO_5_LC_27, o_led_RNO_6_LC_28}
+ble_pack o_led_RNO_1_LC_23 {o_led_RNO_1}
+ble_pack o_led_RNO_3_LC_25 {o_led_RNO_3}
+ble_pack LC_30 {CONSTANT_ONE_LUT4}
+clb_pack PLB_4 {o_led_RNO_1_LC_23, o_led_RNO_3_LC_25, LC_30}
+ble_pack o_led_obufLegalizeSB_DFF_LC_29 {o_led_obufLegalizeSB_DFF, o_led_obufConstOneLUT4}
+clb_pack PLB_5 {o_led_obufLegalizeSB_DFF_LC_29}

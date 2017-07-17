@@ -1,0 +1,33 @@
+set_location o_leds_obuf_0ConstOneLUT4 8 20 0 # SB_LUT4 (LogicCell: o_leds_obuf_0LegalizeSB_DFF_LC_0)
+set_location o_leds_obuf_0LegalizeSB_DFF 8 20 0 # SB_DFF (LogicCell: o_leds_obuf_0LegalizeSB_DFF_LC_0)
+set_location o_leds_obuf_1ConstOneLUT4 8 20 1 # SB_LUT4 (LogicCell: o_leds_obuf_1LegalizeSB_DFF_LC_1)
+set_location o_leds_obuf_1LegalizeSB_DFF 8 20 1 # SB_DFF (LogicCell: o_leds_obuf_1LegalizeSB_DFF_LC_1)
+set_location o_leds_obuf_2ConstOneLUT4 8 20 2 # SB_LUT4 (LogicCell: o_leds_obuf_2LegalizeSB_DFF_LC_2)
+set_location o_leds_obuf_2LegalizeSB_DFF 8 20 2 # SB_DFF (LogicCell: o_leds_obuf_2LegalizeSB_DFF_LC_2)
+set_location o_leds_obuf_3ConstOneLUT4 8 20 3 # SB_LUT4 (LogicCell: o_leds_obuf_3LegalizeSB_DFF_LC_3)
+set_location o_leds_obuf_3LegalizeSB_DFF 8 20 3 # SB_DFF (LogicCell: o_leds_obuf_3LegalizeSB_DFF_LC_3)
+set_location o_leds_obuf_4ConstOneLUT4 7 1 0 # SB_LUT4 (LogicCell: o_leds_obuf_4LegalizeSB_DFF_LC_4)
+set_location o_leds_obuf_4LegalizeSB_DFF 7 1 0 # SB_DFF (LogicCell: o_leds_obuf_4LegalizeSB_DFF_LC_4)
+set_location o_leds_obuf_5ConstOneLUT4 4 1 0 # SB_LUT4 (LogicCell: o_leds_obuf_5LegalizeSB_DFF_LC_5)
+set_location o_leds_obuf_5LegalizeSB_DFF 4 1 0 # SB_DFF (LogicCell: o_leds_obuf_5LegalizeSB_DFF_LC_5)
+set_location o_leds_obuf_6ConstOneLUT4 7 1 1 # SB_LUT4 (LogicCell: o_leds_obuf_6LegalizeSB_DFF_LC_6)
+set_location o_leds_obuf_6LegalizeSB_DFF 7 1 1 # SB_DFF (LogicCell: o_leds_obuf_6LegalizeSB_DFF_LC_6)
+set_location o_leds_obuf_7ConstOneLUT4 7 1 2 # SB_LUT4 (LogicCell: o_leds_obuf_7LegalizeSB_DFF_LC_7)
+set_location o_leds_obuf_7LegalizeSB_DFF 7 1 2 # SB_DFF (LogicCell: o_leds_obuf_7LegalizeSB_DFF_LC_7)
+set_location GND -1 -1 -1 # GND
+set_location LED_CUR_inst 25 21 2 # SB_LED_DRV_CUR
+set_location RGB_DRIVER 0 21 3 # SB_RGB_DRV
+set_io i_p19but_ibuf 21 0 1 # ICE_IO
+set_io i_switch_ibuf[0] 19 21 0 # ICE_IO
+set_io i_switch_ibuf[1] 19 21 1 # ICE_IO
+set_io i_switch_ibuf[2] 18 21 0 # ICE_IO
+set_io o_leds_obuf[0] 9 21 1 # ICE_IO
+set_io o_leds_obuf[1] 8 21 1 # ICE_IO
+set_io o_leds_obuf[2] 8 21 0 # ICE_IO
+set_io o_leds_obuf[3] 9 21 0 # ICE_IO
+set_io o_leds_obuf[4] 7 0 1 # ICE_IO
+set_io o_leds_obuf[5] 5 0 0 # ICE_IO
+set_io o_leds_obuf[6] 6 0 0 # ICE_IO
+set_io o_leds_obuf[7] 7 0 0 # ICE_IO
+set_location internalOscilator 25 0 2 # SMCCLK
+set_location CONSTANT_ONE_LUT4 1 20 0 # SB_LUT4 (LogicCell: LC_8)

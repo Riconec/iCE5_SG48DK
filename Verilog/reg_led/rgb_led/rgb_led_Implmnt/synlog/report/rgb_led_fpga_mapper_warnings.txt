@@ -1,0 +1,2 @@
+@W: MT246 :"d:\drive\projects\lattice fpga\projects\reg_led\top.v":13:11:13:20|Blackbox SB_RGB_DRV is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"d:\drive\projects\lattice fpga\projects\reg_led\top.v":9:15:9:26|Blackbox SB_LED_DRV_CUR is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 

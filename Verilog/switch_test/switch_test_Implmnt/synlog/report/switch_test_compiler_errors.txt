@@ -1,0 +1,2 @@
+@E: CS171 :"D:\Drive\Projects\Lattice FPGA\Projects\switch_test\top.v":8:12:8:25|Reversed range
+

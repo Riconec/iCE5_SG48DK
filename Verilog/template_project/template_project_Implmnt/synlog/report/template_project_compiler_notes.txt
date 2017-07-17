@@ -1,0 +1,26 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Synthesizing module top_ice5 in library work.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":3:7:3:15|Input CLK25_P20 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":4:7:4:16|Input BUTTON_P19 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":5:7:5:16|Input BUTTON_P21 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":6:13:6:14|Input SW is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":37:7:37:15|Input HW_SS_P16 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":38:7:38:16|Input HW_SCK_P15 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":39:7:39:17|Input HW_MOSI_P17 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":42:7:42:15|Input IN_H7_P37 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":43:7:43:15|Input IN_H7_P35 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":45:7:45:14|Input IN_H6_P2 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":46:7:46:14|Input IN_H6_P3 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":47:7:47:14|Input IN_H6_P4 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":48:7:48:14|Input IN_H6_P6 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":49:7:49:14|Input IN_H6_P9 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":50:7:50:15|Input IN_H6_P10 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":51:7:51:15|Input IN_H6_P11 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":52:7:52:15|Input IN_H6_P12 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":53:7:53:15|Input IN_H6_P13 is unused.
+@N: CL159 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":54:7:54:15|Input IN_H6_P18 is unused.
+@N|Running in 64-bit mode
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+@N: NF107 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":1:7:1:14|Selected library: work cell: top_ice5 view verilog as top level
+

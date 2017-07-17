@@ -3,7 +3,7 @@
 <title>Static Call Graph - [SPI_CDC\SPI_CDC.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image SPI_CDC\SPI_CDC.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Fri Jun 30 00:02:14 2017
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060422: Last Updated: Wed Jul 05 01:10:37 2017
 <BR><P>
 <H3>Maximum Stack Usage =        288 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -204,11 +204,11 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 <BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CDC_Receive_FS
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
-<P><STRONG><a name="[9a]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<P><STRONG><a name="[9e]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[d7]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
@@ -217,14 +217,14 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
 
-<P><STRONG><a name="[8e]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<P><STRONG><a name="[9a]"></a>strlen</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, strlen.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
-<P><STRONG><a name="[8f]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
+<P><STRONG><a name="[9b]"></a>strcmp</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, strcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[4e]"></a>strcpy</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, strcpy.o(.text))
@@ -236,7 +236,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__vfscanf_char
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[40]"></a>_scanf_int</STRONG> (Thumb, 330 bytes, Stack size 48 bytes, _scanf_int.o(.text))
@@ -325,7 +325,7 @@ Global Symbols
 <LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_CDC_SetTxBuffer
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_TogglePin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[52]"></a>HAL_Delay</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, stm32f0xx_hal.o(i.HAL_Delay))
@@ -333,26 +333,25 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[7c]"></a>HAL_GPIO_DeInit</STRONG> (Thumb, 192 bytes, Stack size 20 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_DeInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_GPIO_DeInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_MspDeInit
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[7d]"></a>HAL_GPIO_Init</STRONG> (Thumb, 302 bytes, Stack size 24 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = HAL_GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_MspInit
 </UL>
 
-<P><STRONG><a name="[97]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
+<P><STRONG><a name="[9c]"></a>HAL_GPIO_ReadPin</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_ReadPin))
 <BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[50]"></a>HAL_GPIO_TogglePin</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_TogglePin))
@@ -360,20 +359,20 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[84]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Status
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Enable
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Disable
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Wake
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Sleep
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Sector_Erase
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Read_Status
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Read
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Page_Init
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Page_Commit
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Bulk_Erase
 <LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_STATUS
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_ENABLE
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_DISABLE
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WAKE
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SLEEP
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SECTOR_ERASE
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_READ_STATUS
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_READ
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PAGE_INIT
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PAGE_COMMIT
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_BULK_ERASE
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[53]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f0xx_hal.o(i.HAL_GetTick))
@@ -479,7 +478,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_OpenEP
 </UL>
 
-<P><STRONG><a name="[8c]"></a>HAL_PCD_EP_Receive</STRONG> (Thumb, 298 bytes, Stack size 20 bytes, stm32f0xx_hal_pcd.o(i.HAL_PCD_EP_Receive))
+<P><STRONG><a name="[98]"></a>HAL_PCD_EP_Receive</STRONG> (Thumb, 298 bytes, Stack size 20 bytes, stm32f0xx_hal_pcd.o(i.HAL_PCD_EP_Receive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HAL_PCD_EP_Receive
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_PrepareReceive
@@ -626,7 +625,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_MspDeInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[7a]"></a>HAL_SPI_Init</STRONG> (Thumb, 184 bytes, Stack size 24 bytes, stm32f0xx_hal_spi.o(i.HAL_SPI_Init))
@@ -634,8 +633,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_MspInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_SPI1_Init
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_SPI1_Init
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[79]"></a>HAL_SPI_MspDeInit</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, stm32f0xx_hal_msp.o(i.HAL_SPI_MspDeInit))
@@ -660,13 +659,14 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_EndRxTxTransaction
 </UL>
-<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_ENABLE
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_DISABLE
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SLEEP
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SECTOR_ERASE
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PAGE_PROG
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PAGE_INIT
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_BULK_ERASE
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Enable
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Disable
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Sleep
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Sector_Erase
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Page_Prog
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Page_Init
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Bulk_Erase
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[80]"></a>HAL_SPI_TransmitReceive</STRONG> (Thumb, 584 bytes, Stack size 48 bytes, stm32f0xx_hal_spi.o(i.HAL_SPI_TransmitReceive))
@@ -675,10 +675,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_EndRxTxTransaction
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_STATUS
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WAKE
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_READ_STATUS
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_READ
+<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Status
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Wake
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Read_Status
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Read
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[a2]"></a>HAL_SYSTICK_CLKSourceConfig</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f0xx_hal_cortex.o(i.HAL_SYSTICK_CLKSourceConfig))
@@ -713,13 +714,119 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f070x6.o(RESET)
 </UL>
-<P><STRONG><a name="[86]"></a>MX_USB_DEVICE_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, usb_device.o(i.MX_USB_DEVICE_Init))
+<P><STRONG><a name="[83]"></a>M25Pxx_Bulk_Erase</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Bulk_Erase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = M25Pxx_Bulk_Erase &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[85]"></a>M25Pxx_Page_Commit</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Page_Commit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = M25Pxx_Page_Commit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[86]"></a>M25Pxx_Page_Init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Page_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = M25Pxx_Page_Init &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[87]"></a>M25Pxx_Page_Prog</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Page_Prog))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = M25Pxx_Page_Prog &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[88]"></a>M25Pxx_Read</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, m25pxx_flash.o(i.M25Pxx_Read))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = M25Pxx_Read &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[89]"></a>M25Pxx_Read_Status</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, m25pxx_flash.o(i.M25Pxx_Read_Status))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = M25Pxx_Read_Status &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[8a]"></a>M25Pxx_Sector_Erase</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Sector_Erase))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = M25Pxx_Sector_Erase &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[8b]"></a>M25Pxx_Sleep</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Sleep))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = M25Pxx_Sleep &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[8c]"></a>M25Pxx_Wake</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, m25pxx_flash.o(i.M25Pxx_Wake))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = M25Pxx_Wake &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[8d]"></a>M25Pxx_Write_Disable</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Write_Disable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = M25Pxx_Write_Disable &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[8e]"></a>M25Pxx_Write_Enable</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, m25pxx_flash.o(i.M25Pxx_Write_Enable))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = M25Pxx_Write_Enable &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[8f]"></a>M25Pxx_Write_Status</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, m25pxx_flash.o(i.M25Pxx_Write_Status))
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = M25Pxx_Write_Status &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
+</UL>
+<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
+<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+</UL>
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+</UL>
+
+<P><STRONG><a name="[92]"></a>MX_USB_DEVICE_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, usb_device.o(i.MX_USB_DEVICE_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = MX_USB_DEVICE_Init &rArr; USBD_Init &rArr; USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_NVIC_SetPriority
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Start
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_RegisterClass
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_CDC_RegisterInterface
+<BR>[Calls]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Start
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_RegisterClass
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Init
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_CDC_RegisterInterface
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -727,7 +834,7 @@ Global Symbols
 <P><STRONG><a name="[16]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f0xx_it.o(i.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f070x6.o(RESET)
 </UL>
-<P><STRONG><a name="[8b]"></a>PCD_ReadPMA</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, stm32f0xx_hal_pcd.o(i.PCD_ReadPMA))
+<P><STRONG><a name="[97]"></a>PCD_ReadPMA</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, stm32f0xx_hal_pcd.o(i.PCD_ReadPMA))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PCD_ReadPMA
 </UL>
 <BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_EP_ISR_Handler
@@ -740,34 +847,35 @@ Global Symbols
 <LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_EP_ISR_Handler
 </UL>
 
-<P><STRONG><a name="[8d]"></a>ParseCDCCommand</STRONG> (Thumb, 1528 bytes, Stack size 80 bytes, main.o(i.ParseCDCCommand))
+<P><STRONG><a name="[99]"></a>ParseCDCCommand</STRONG> (Thumb, 1710 bytes, Stack size 80 bytes, main.o(i.ParseCDCCommand))
 <BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = ParseCDCCommand &rArr; __0sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_string
 </UL>
 <BR>[Calls]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Status
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Enable
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Write_Disable
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Wake
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Sleep
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Sector_Erase
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Read_Status
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Read
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Page_Prog
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Page_Init
+<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Page_Commit
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;M25Pxx_Bulk_Erase
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Init
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_DeInit
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_DeInit
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CDC_Transmit_FS
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_STATUS
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_ENABLE
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WRITE_DISABLE
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_WAKE
-<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SLEEP
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_SECTOR_ERASE
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_READ_STATUS
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_READ
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PAGE_PROG
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PAGE_INIT
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_PAGE_COMMIT
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_FLASH_BULK_ERASE
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[3b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sscanf
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -775,112 +883,6 @@ Global Symbols
 <P><STRONG><a name="[19]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f0xx_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f070x6.o(RESET)
 </UL>
-<P><STRONG><a name="[95]"></a>SPI_FLASH_BULK_ERASE</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_BULK_ERASE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_FLASH_BULK_ERASE &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[96]"></a>SPI_FLASH_PAGE_COMMIT</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_PAGE_COMMIT))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI_FLASH_PAGE_COMMIT
-</UL>
-<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[9d]"></a>SPI_FLASH_PAGE_INIT</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_PAGE_INIT))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_FLASH_PAGE_INIT &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[99]"></a>SPI_FLASH_PAGE_PROG</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_PAGE_PROG))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_FLASH_PAGE_PROG &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[9e]"></a>SPI_FLASH_READ</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, main.o(i.SPI_FLASH_READ))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = SPI_FLASH_READ &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[94]"></a>SPI_FLASH_READ_STATUS</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, main.o(i.SPI_FLASH_READ_STATUS))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = SPI_FLASH_READ_STATUS &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[9c]"></a>SPI_FLASH_SECTOR_ERASE</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_SECTOR_ERASE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_FLASH_SECTOR_ERASE &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[91]"></a>SPI_FLASH_SLEEP</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_SLEEP))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_FLASH_SLEEP &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[90]"></a>SPI_FLASH_WAKE</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, main.o(i.SPI_FLASH_WAKE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = SPI_FLASH_WAKE &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[93]"></a>SPI_FLASH_WRITE_DISABLE</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_WRITE_DISABLE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_FLASH_WRITE_DISABLE &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[92]"></a>SPI_FLASH_WRITE_ENABLE</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, main.o(i.SPI_FLASH_WRITE_ENABLE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = SPI_FLASH_WRITE_ENABLE &rArr; HAL_SPI_Transmit &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Transmit
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
-<P><STRONG><a name="[9b]"></a>SPI_FLASH_WRITE_STATUS</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, main.o(i.SPI_FLASH_WRITE_STATUS))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = SPI_FLASH_WRITE_STATUS &rArr; HAL_SPI_TransmitReceive &rArr; SPI_EndRxTxTransaction &rArr; SPI_WaitFlagStateUntilTimeout
-</UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_TransmitReceive
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-</UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
-</UL>
-
 <P><STRONG><a name="[18]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f0xx_it.o(i.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f070x6.o(RESET)
 </UL>
@@ -922,8 +924,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CDC_Receive_FS
 </UL>
 
-<P><STRONG><a name="[89]"></a>USBD_CDC_RegisterInterface</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usbd_cdc.o(i.USBD_CDC_RegisterInterface))
-<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
+<P><STRONG><a name="[95]"></a>USBD_CDC_RegisterInterface</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usbd_cdc.o(i.USBD_CDC_RegisterInterface))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
 </UL>
 
 <P><STRONG><a name="[4c]"></a>USBD_CDC_SetRxBuffer</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usbd_cdc.o(i.USBD_CDC_SetRxBuffer))
@@ -1068,12 +1070,12 @@ Global Symbols
 <LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_FS_ConfigStrDescriptor
 </UL>
 
-<P><STRONG><a name="[87]"></a>USBD_Init</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, usbd_core.o(i.USBD_Init))
+<P><STRONG><a name="[93]"></a>USBD_Init</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, usbd_core.o(i.USBD_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = USBD_Init &rArr; USBD_LL_Init &rArr; HAL_PCD_Init &rArr; HAL_PCD_MspInit &rArr; HAL_NVIC_SetPriority
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
 </UL>
 
 <P><STRONG><a name="[b6]"></a>USBD_LL_ClearStallEP</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, usbd_conf.o(i.USBD_LL_ClearStallEP))
@@ -1127,7 +1129,7 @@ Global Symbols
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Init
 <LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCDEx_PMAConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Init
+<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Init
 </UL>
 
 <P><STRONG><a name="[c8]"></a>USBD_LL_IsStallEP</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, usbd_conf.o(i.USBD_LL_IsStallEP))
@@ -1146,7 +1148,7 @@ Global Symbols
 <P><STRONG><a name="[a8]"></a>USBD_LL_PrepareReceive</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, usbd_conf.o(i.USBD_LL_PrepareReceive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = USBD_LL_PrepareReceive &rArr; HAL_PCD_EP_Receive
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_EP_Receive
+<BR>[Calls]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_EP_Receive
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_CtlReceiveStatus
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_CtlContinueRx
@@ -1213,7 +1215,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_Start
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Start
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_Start
 </UL>
 
 <P><STRONG><a name="[73]"></a>USBD_LL_Suspend</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, usbd_core.o(i.USBD_LL_Suspend))
@@ -1235,8 +1237,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_SetupStage
 </UL>
 
-<P><STRONG><a name="[88]"></a>USBD_RegisterClass</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, usbd_core.o(i.USBD_RegisterClass))
-<BR><BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
+<P><STRONG><a name="[94]"></a>USBD_RegisterClass</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, usbd_core.o(i.USBD_RegisterClass))
+<BR><BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
 </UL>
 
 <P><STRONG><a name="[c7]"></a>USBD_SetClassConfig</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, usbd_core.o(i.USBD_SetClassConfig))
@@ -1245,12 +1247,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_SetConfig
 </UL>
 
-<P><STRONG><a name="[8a]"></a>USBD_Start</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, usbd_core.o(i.USBD_Start))
+<P><STRONG><a name="[96]"></a>USBD_Start</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, usbd_core.o(i.USBD_Start))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USBD_Start &rArr; USBD_LL_Start
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_LL_Start
 </UL>
-<BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
+<BR>[Called By]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
 </UL>
 
 <P><STRONG><a name="[bf]"></a>USBD_StdDevReq</STRONG> (Thumb, 238 bytes, Stack size 24 bytes, usbd_ctlreq.o(i.USBD_StdDevReq))
@@ -1318,10 +1320,10 @@ Global Symbols
 
 <P><STRONG><a name="[dc]"></a>__1sprintf$8</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0sprintf$8), UNUSED)
 
-<P><STRONG><a name="[98]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0sprintf$8))
+<P><STRONG><a name="[9d]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf8.o(i.__0sprintf$8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 
 <P><STRONG><a name="[b4]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, usbd_ctlreq.o(i.__ARM_common_switch8))
@@ -1340,14 +1342,14 @@ Global Symbols
 <P><STRONG><a name="[31]"></a>main</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 288<LI>Call Chain = main &rArr; ParseCDCCommand &rArr; __0sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_string
 </UL>
-<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_SPI1_Init
-<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_SPI1_Init
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemClock_Config
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USB_DEVICE_Init
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ParseCDCCommand
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL><P>
@@ -1424,7 +1426,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USBD_StdDevReq
 </UL>
 
-<P><STRONG><a name="[83]"></a>MX_GPIO_Init</STRONG> (Thumb, 136 bytes, Stack size 48 bytes, main.o(i.MX_GPIO_Init))
+<P><STRONG><a name="[90]"></a>MX_GPIO_Init</STRONG> (Thumb, 136 bytes, Stack size 48 bytes, main.o(i.MX_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
@@ -1433,7 +1435,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[85]"></a>MX_SPI1_Init</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, main.o(i.MX_SPI1_Init))
+<P><STRONG><a name="[91]"></a>MX_SPI1_Init</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, main.o(i.MX_SPI1_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MX_SPI1_Init &rArr; HAL_SPI_Init &rArr; HAL_SPI_MspInit &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_SPI_Init
@@ -1495,12 +1497,12 @@ Local Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = PCD_EP_ISR_Handler &rArr; HAL_PCD_SetupStageCallback &rArr; USBD_LL_SetupStage &rArr; USBD_StdDevReq &rArr; USBD_GetDescriptor &rArr; USBD_CtlSendData &rArr; USBD_LL_Transmit &rArr; HAL_PCD_EP_Transmit &rArr; PCD_WritePMA
 </UL>
 <BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_EP_Transmit
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_EP_Receive
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_EP_Receive
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_SetupStageCallback
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_DataOutStageCallback
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_DataInStageCallback
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_WritePMA
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ReadPMA
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PCD_ReadPMA
 </UL>
 <BR>[Called By]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_PCD_IRQHandler
 </UL>

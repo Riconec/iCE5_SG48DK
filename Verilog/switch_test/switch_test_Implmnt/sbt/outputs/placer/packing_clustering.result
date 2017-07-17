@@ -1,0 +1,34 @@
+ble_pack un1_i_switch_cry_0_c_LC_23 {un1_i_switch_cry_0_c}
+ble_pack un1_i_switch_cry_0_THRU_LUT4_0_LC_17 {un1_i_switch_cry_1_c, un1_i_switch_cry_0_THRU_LUT4_0}
+ble_pack un1_i_switch_cry_1_THRU_LUT4_0_LC_18 {un1_i_switch_cry_2_c, un1_i_switch_cry_1_THRU_LUT4_0}
+ble_pack un1_i_switch_cry_2_THRU_LUT4_0_LC_19 {un1_i_switch_cry_3_c, un1_i_switch_cry_2_THRU_LUT4_0}
+ble_pack un1_i_switch_cry_3_THRU_LUT4_0_LC_20 {un1_i_switch_cry_4_c, un1_i_switch_cry_3_THRU_LUT4_0}
+ble_pack un1_i_switch_cry_4_THRU_LUT4_0_LC_21 {un1_i_switch_cry_5_c, un1_i_switch_cry_4_THRU_LUT4_0}
+ble_pack un1_i_switch_cry_5_THRU_LUT4_0_LC_22 {un1_i_switch_cry_6_c, un1_i_switch_cry_5_THRU_LUT4_0}
+ble_pack o_leds_obuf_RNO[7]_LC_8 {o_leds_obuf_RNO[7]}
+clb_pack PLB_0 {un1_i_switch_cry_0_c_LC_23, un1_i_switch_cry_0_THRU_LUT4_0_LC_17, un1_i_switch_cry_1_THRU_LUT4_0_LC_18, un1_i_switch_cry_2_THRU_LUT4_0_LC_19, un1_i_switch_cry_3_THRU_LUT4_0_LC_20, un1_i_switch_cry_4_THRU_LUT4_0_LC_21, un1_i_switch_cry_5_THRU_LUT4_0_LC_22, o_leds_obuf_RNO[7]_LC_8}
+ble_pack o_leds_obuf_RNO[0]_LC_1 {o_leds_obuf_RNO[0]}
+ble_pack i_p21but_ibuf_RNITRAP_LC_0 {i_p21but_ibuf_RNITRAP}
+ble_pack o_leds_obuf_RNO[1]_LC_2 {o_leds_obuf_RNO[1]}
+ble_pack o_leds_obuf_RNO[2]_LC_3 {o_leds_obuf_RNO[2]}
+ble_pack o_leds_obuf_RNO[3]_LC_4 {o_leds_obuf_RNO[3]}
+ble_pack o_leds_obuf_RNO[4]_LC_5 {o_leds_obuf_RNO[4]}
+ble_pack o_leds_obuf_RNO[5]_LC_6 {o_leds_obuf_RNO[5]}
+ble_pack o_leds_obuf_RNO[6]_LC_7 {o_leds_obuf_RNO[6]}
+clb_pack PLB_1 {o_leds_obuf_RNO[0]_LC_1, i_p21but_ibuf_RNITRAP_LC_0, o_leds_obuf_RNO[1]_LC_2, o_leds_obuf_RNO[2]_LC_3, o_leds_obuf_RNO[3]_LC_4, o_leds_obuf_RNO[4]_LC_5, o_leds_obuf_RNO[5]_LC_6, o_leds_obuf_RNO[6]_LC_7}
+ble_pack o_leds_obuf_0LegalizeSB_DFF_LC_9 {o_leds_obuf_0LegalizeSB_DFF, o_leds_obuf_0ConstOneLUT4}
+clb_pack PLB_2 {o_leds_obuf_0LegalizeSB_DFF_LC_9}
+ble_pack o_leds_obuf_1LegalizeSB_DFF_LC_10 {o_leds_obuf_1LegalizeSB_DFF, o_leds_obuf_1ConstOneLUT4}
+clb_pack PLB_3 {o_leds_obuf_1LegalizeSB_DFF_LC_10}
+ble_pack o_leds_obuf_2LegalizeSB_DFF_LC_11 {o_leds_obuf_2LegalizeSB_DFF, o_leds_obuf_2ConstOneLUT4}
+clb_pack PLB_4 {o_leds_obuf_2LegalizeSB_DFF_LC_11}
+ble_pack o_leds_obuf_3LegalizeSB_DFF_LC_12 {o_leds_obuf_3LegalizeSB_DFF, o_leds_obuf_3ConstOneLUT4}
+clb_pack PLB_5 {o_leds_obuf_3LegalizeSB_DFF_LC_12}
+ble_pack o_leds_obuf_4LegalizeSB_DFF_LC_13 {o_leds_obuf_4LegalizeSB_DFF, o_leds_obuf_4ConstOneLUT4}
+clb_pack PLB_6 {o_leds_obuf_4LegalizeSB_DFF_LC_13}
+ble_pack o_leds_obuf_5LegalizeSB_DFF_LC_14 {o_leds_obuf_5LegalizeSB_DFF, o_leds_obuf_5ConstOneLUT4}
+clb_pack PLB_7 {o_leds_obuf_5LegalizeSB_DFF_LC_14}
+ble_pack o_leds_obuf_6LegalizeSB_DFF_LC_15 {o_leds_obuf_6LegalizeSB_DFF, o_leds_obuf_6ConstOneLUT4}
+clb_pack PLB_8 {o_leds_obuf_6LegalizeSB_DFF_LC_15}
+ble_pack o_leds_obuf_7LegalizeSB_DFF_LC_16 {o_leds_obuf_7LegalizeSB_DFF, o_leds_obuf_7ConstOneLUT4}
+clb_pack PLB_9 {o_leds_obuf_7LegalizeSB_DFF_LC_16}

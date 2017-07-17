@@ -1,0 +1,28 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2017.01.27914
+
+# File Generated:     Jun 29 2017 23:36:16
+
+# Family & Device:    iCE5LP2K
+
+# Package:            SG48
+
+# ##############################################################################
+
+###IOSet List 12
+set_io i_p19but 19 -io_std SB_LVCMOS
+set_io i_switch[2] 26 -io_std SB_LVCMOS
+set_io o_leds[2] 42 -io_std SB_LVCMOS
+set_io o_leds[6] 47 -io_std SB_LVCMOS
+set_io i_switch[1] 25 -io_std SB_LVCMOS
+set_io o_leds[1] 38 -io_std SB_LVCMOS
+set_io o_leds[3] 43 -io_std SB_LVCMOS
+set_io o_leds[5] 46 -io_std SB_LVCMOS
+set_io o_leds[7] 48 -io_std SB_LVCMOS
+set_io i_switch[0] 23 -io_std SB_LVCMOS
+set_io o_leds[0] 36 -io_std SB_LVCMOS
+set_io o_leds[4] 45 -io_std SB_LVCMOS
+

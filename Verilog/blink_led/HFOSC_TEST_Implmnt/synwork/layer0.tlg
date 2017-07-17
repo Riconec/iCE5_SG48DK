@@ -1,0 +1,5 @@
+Selecting top level module top
+@N: CG364 :"C:\lscc\iCEcube2.2017.01\synpbase\lib\generic\sb_ice40.v":4020:7:4020:14|Synthesizing module SB_HFOSC in library work.
+
+@N: CG364 :"D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\top.v":1:7:1:9|Synthesizing module top in library work.
+

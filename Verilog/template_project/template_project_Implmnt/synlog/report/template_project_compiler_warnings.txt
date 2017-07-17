@@ -1,0 +1,3 @@
+@W: CG360 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":40:8:40:18|Removing wire HW_MISO_P14, as there is no assignment to it.
+@W: CL157 :"K:\Drive\Projects\Lattice FPGA\Projects\template_project\top_wrapper.v":40:8:40:18|*Output HW_MISO_P14 has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+

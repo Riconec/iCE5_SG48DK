@@ -1,0 +1,517 @@
+* ******************************************************************************
+
+* iCEcube Router
+
+* Version:            2017.01.27914
+
+* Build Date:         Jan 12 2017 18:44:30
+
+* File Generated:     Jun 19 2017 01:38:48
+
+* Purpose:            Detailed routing info for each net
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Net : o_led_obufLegalizeSB_DFFNet
+T_7_1_wire_logic_cluster/lc_0/out
+T_7_0_lc_trk_g1_0
+T_7_0_wire_io_cluster/io_0/OUT_ENB
+
+End 
+
+Net : counterZ0Z_0
+T_2_11_wire_logic_cluster/lc_0/out
+T_2_11_lc_trk_g3_0
+T_2_11_wire_logic_cluster/lc_0/in_1
+
+T_2_11_wire_logic_cluster/lc_0/out
+T_3_12_lc_trk_g3_0
+T_3_12_wire_logic_cluster/lc_0/in_1
+
+End 
+
+Net : counter_cry_19
+T_2_13_wire_logic_cluster/lc_3/cout
+T_2_13_wire_logic_cluster/lc_4/in_3
+
+End 
+
+Net : counterZ0Z_1
+T_2_11_wire_logic_cluster/lc_1/out
+T_2_11_lc_trk_g3_1
+T_2_11_wire_logic_cluster/lc_1/in_1
+
+T_2_11_wire_logic_cluster/lc_1/out
+T_3_11_lc_trk_g0_1
+T_3_11_wire_logic_cluster/lc_2/in_1
+
+End 
+
+Net : counter_cry_18
+T_2_13_wire_logic_cluster/lc_2/cout
+T_2_13_wire_logic_cluster/lc_3/in_3
+
+Net : counterZ0Z_2
+T_2_11_wire_logic_cluster/lc_2/out
+T_2_11_lc_trk_g1_2
+T_2_11_wire_logic_cluster/lc_2/in_1
+
+T_2_11_wire_logic_cluster/lc_2/out
+T_0_11_sp12_h_l_7
+T_3_11_lc_trk_g1_7
+T_3_11_wire_logic_cluster/lc_2/in_0
+
+End 
+
+Net : counter_cry_17
+T_2_13_wire_logic_cluster/lc_1/cout
+T_2_13_wire_logic_cluster/lc_2/in_3
+
+Net : counterZ0Z_3
+T_2_11_wire_logic_cluster/lc_3/out
+T_2_11_lc_trk_g1_3
+T_2_11_wire_logic_cluster/lc_3/in_1
+
+T_2_11_wire_logic_cluster/lc_3/out
+T_3_11_lc_trk_g1_3
+T_3_11_input_2_2
+T_3_11_wire_logic_cluster/lc_2/in_2
+
+End 
+
+Net : counter_cry_16
+T_2_13_wire_logic_cluster/lc_0/cout
+T_2_13_wire_logic_cluster/lc_1/in_3
+
+Net : counterZ0Z_4
+T_2_11_wire_logic_cluster/lc_4/out
+T_2_11_lc_trk_g3_4
+T_2_11_wire_logic_cluster/lc_4/in_1
+
+T_2_11_wire_logic_cluster/lc_4/out
+T_3_11_lc_trk_g1_4
+T_3_11_wire_logic_cluster/lc_2/in_3
+
+End 
+
+Net : bfn_2_13_0_
+T_2_13_wire_logic_cluster/carry_in_mux/cout
+T_2_13_wire_logic_cluster/lc_0/in_3
+
+Net : proc__o_led3_18_cascade_
+T_3_11_wire_logic_cluster/lc_0/ltout
+T_3_11_wire_logic_cluster/lc_1/in_2
+
+End 
+
+Net : proc__o_led3_12
+T_3_11_wire_logic_cluster/lc_2/out
+T_3_12_lc_trk_g0_2
+T_3_12_wire_logic_cluster/lc_1/in_3
+
+End 
+
+Net : proc__o_led3_16
+T_3_12_wire_logic_cluster/lc_1/out
+T_3_11_lc_trk_g1_1
+T_3_11_input_2_0
+T_3_11_wire_logic_cluster/lc_0/in_2
+
+End 
+
+Net : counterZ0Z_5
+T_2_11_wire_logic_cluster/lc_5/out
+T_2_11_lc_trk_g1_5
+T_2_11_wire_logic_cluster/lc_5/in_1
+
+T_2_11_wire_logic_cluster/lc_5/out
+T_3_11_lc_trk_g1_5
+T_3_11_wire_logic_cluster/lc_5/in_3
+
+End 
+
+Net : counterZ0Z_6
+T_2_11_wire_logic_cluster/lc_6/out
+T_2_11_lc_trk_g1_6
+T_2_11_wire_logic_cluster/lc_6/in_1
+
+T_2_11_wire_logic_cluster/lc_6/out
+T_3_11_lc_trk_g0_6
+T_3_11_wire_logic_cluster/lc_5/in_1
+
+End 
+
+Net : counterZ0Z_7
+T_2_11_wire_logic_cluster/lc_7/out
+T_2_11_lc_trk_g3_7
+T_2_11_wire_logic_cluster/lc_7/in_1
+
+T_2_11_wire_logic_cluster/lc_7/out
+T_3_11_lc_trk_g0_7
+T_3_11_wire_logic_cluster/lc_5/in_0
+
+End 
+
+Net : counter_cry_14
+T_2_12_wire_logic_cluster/lc_6/cout
+T_2_12_wire_logic_cluster/lc_7/in_3
+
+Net : counter_cry_13
+T_2_12_wire_logic_cluster/lc_5/cout
+T_2_12_wire_logic_cluster/lc_6/in_3
+
+Net : counter_cry_12
+T_2_12_wire_logic_cluster/lc_4/cout
+T_2_12_wire_logic_cluster/lc_5/in_3
+
+Net : counterZ0Z_8
+T_2_12_wire_logic_cluster/lc_0/out
+T_2_12_lc_trk_g3_0
+T_2_12_wire_logic_cluster/lc_0/in_1
+
+T_2_12_wire_logic_cluster/lc_0/out
+T_3_11_lc_trk_g3_0
+T_3_11_input_2_5
+T_3_11_wire_logic_cluster/lc_5/in_2
+
+End 
+
+Net : counter_cry_11
+T_2_12_wire_logic_cluster/lc_3/cout
+T_2_12_wire_logic_cluster/lc_4/in_3
+
+Net : proc__o_led3_2_cascade_
+T_3_12_wire_logic_cluster/lc_0/ltout
+T_3_12_wire_logic_cluster/lc_1/in_2
+
+End 
+
+Net : counterZ0Z_19
+T_2_13_wire_logic_cluster/lc_3/out
+T_3_12_lc_trk_g2_3
+T_3_12_wire_logic_cluster/lc_0/in_3
+
+T_2_13_wire_logic_cluster/lc_3/out
+T_2_13_lc_trk_g1_3
+T_2_13_wire_logic_cluster/lc_3/in_1
+
+End 
+
+Net : counterZ0Z_9
+T_2_12_wire_logic_cluster/lc_1/out
+T_2_12_lc_trk_g3_1
+T_2_12_wire_logic_cluster/lc_1/in_1
+
+T_2_12_wire_logic_cluster/lc_1/out
+T_3_12_lc_trk_g1_1
+T_3_12_wire_logic_cluster/lc_5/in_3
+
+End 
+
+Net : counter_cry_10
+T_2_12_wire_logic_cluster/lc_2/cout
+T_2_12_wire_logic_cluster/lc_3/in_3
+
+Net : counterZ0Z_10
+T_2_12_wire_logic_cluster/lc_2/out
+T_2_12_lc_trk_g1_2
+T_2_12_wire_logic_cluster/lc_2/in_1
+
+T_2_12_wire_logic_cluster/lc_2/out
+T_3_12_lc_trk_g1_2
+T_3_12_wire_logic_cluster/lc_5/in_0
+
+End 
+
+Net : counter_cry_9
+T_2_12_wire_logic_cluster/lc_1/cout
+T_2_12_wire_logic_cluster/lc_2/in_3
+
+Net : counterZ0Z_11
+T_2_12_wire_logic_cluster/lc_3/out
+T_2_12_lc_trk_g1_3
+T_2_12_wire_logic_cluster/lc_3/in_1
+
+T_2_12_wire_logic_cluster/lc_3/out
+T_3_12_lc_trk_g1_3
+T_3_12_wire_logic_cluster/lc_5/in_1
+
+End 
+
+Net : counter_cry_8
+T_2_12_wire_logic_cluster/lc_0/cout
+T_2_12_wire_logic_cluster/lc_1/in_3
+
+Net : proc__o_led3_10
+T_3_12_wire_logic_cluster/lc_2/out
+T_3_11_lc_trk_g0_2
+T_3_11_wire_logic_cluster/lc_0/in_0
+
+End 
+
+Net : counterZ0Z_15
+T_2_12_wire_logic_cluster/lc_7/out
+T_3_12_lc_trk_g0_7
+T_3_12_wire_logic_cluster/lc_2/in_3
+
+T_2_12_wire_logic_cluster/lc_7/out
+T_2_12_lc_trk_g3_7
+T_2_12_wire_logic_cluster/lc_7/in_1
+
+End 
+
+Net : counterZ0Z_16
+T_2_13_wire_logic_cluster/lc_0/out
+T_3_12_lc_trk_g2_0
+T_3_12_wire_logic_cluster/lc_2/in_0
+
+T_2_13_wire_logic_cluster/lc_0/out
+T_2_13_lc_trk_g3_0
+T_2_13_wire_logic_cluster/lc_0/in_1
+
+End 
+
+Net : counterZ0Z_20
+T_2_13_wire_logic_cluster/lc_4/out
+T_3_12_lc_trk_g3_4
+T_3_12_wire_logic_cluster/lc_2/in_1
+
+T_2_13_wire_logic_cluster/lc_4/out
+T_2_13_lc_trk_g1_4
+T_2_13_wire_logic_cluster/lc_4/in_1
+
+End 
+
+Net : counterZ0Z_18
+T_2_13_wire_logic_cluster/lc_2/out
+T_3_12_lc_trk_g3_2
+T_3_12_wire_logic_cluster/lc_1/in_0
+
+T_2_13_wire_logic_cluster/lc_2/out
+T_2_13_lc_trk_g1_2
+T_2_13_wire_logic_cluster/lc_2/in_1
+
+End 
+
+Net : counterZ0Z_17
+T_2_13_wire_logic_cluster/lc_1/out
+T_3_12_lc_trk_g3_1
+T_3_12_wire_logic_cluster/lc_1/in_1
+
+T_2_13_wire_logic_cluster/lc_1/out
+T_2_13_lc_trk_g3_1
+T_2_13_wire_logic_cluster/lc_1/in_1
+
+End 
+
+Net : counterZ0Z_12
+T_2_12_wire_logic_cluster/lc_4/out
+T_2_12_lc_trk_g3_4
+T_2_12_wire_logic_cluster/lc_4/in_1
+
+T_2_12_wire_logic_cluster/lc_4/out
+T_3_12_lc_trk_g1_4
+T_3_12_input_2_5
+T_3_12_wire_logic_cluster/lc_5/in_2
+
+End 
+
+Net : bfn_2_12_0_
+T_2_12_wire_logic_cluster/carry_in_mux/cout
+T_2_12_wire_logic_cluster/lc_0/in_3
+
+Net : counterZ0Z_13
+T_2_12_wire_logic_cluster/lc_5/out
+T_2_12_lc_trk_g1_5
+T_2_12_wire_logic_cluster/lc_5/in_1
+
+T_2_12_wire_logic_cluster/lc_5/out
+T_3_11_lc_trk_g2_5
+T_3_11_wire_logic_cluster/lc_0/in_3
+
+End 
+
+Net : proc__o_led3_14
+T_3_12_wire_logic_cluster/lc_5/out
+T_3_11_lc_trk_g0_5
+T_3_11_wire_logic_cluster/lc_1/in_0
+
+End 
+
+Net : counterZ0Z_14
+T_2_12_wire_logic_cluster/lc_6/out
+T_2_12_lc_trk_g1_6
+T_2_12_wire_logic_cluster/lc_6/in_1
+
+T_2_12_wire_logic_cluster/lc_6/out
+T_3_11_lc_trk_g3_6
+T_3_11_wire_logic_cluster/lc_0/in_1
+
+End 
+
+Net : counter_cry_6
+T_2_11_wire_logic_cluster/lc_6/cout
+T_2_11_wire_logic_cluster/lc_7/in_3
+
+Net : proc__o_led3_13
+T_3_11_wire_logic_cluster/lc_5/out
+T_3_11_lc_trk_g3_5
+T_3_11_wire_logic_cluster/lc_1/in_3
+
+End 
+
+Net : counter_cry_5
+T_2_11_wire_logic_cluster/lc_5/cout
+T_2_11_wire_logic_cluster/lc_6/in_3
+
+Net : counter_cry_4
+T_2_11_wire_logic_cluster/lc_4/cout
+T_2_11_wire_logic_cluster/lc_5/in_3
+
+Net : counter_cry_3
+T_2_11_wire_logic_cluster/lc_3/cout
+T_2_11_wire_logic_cluster/lc_4/in_3
+
+Net : counter_cry_2
+T_2_11_wire_logic_cluster/lc_2/cout
+T_2_11_wire_logic_cluster/lc_3/in_3
+
+Net : counter_cry_1
+T_2_11_wire_logic_cluster/lc_1/cout
+T_2_11_wire_logic_cluster/lc_2/in_3
+
+Net : counter_cry_0
+T_2_11_wire_logic_cluster/lc_0/cout
+T_2_11_wire_logic_cluster/lc_1/in_3
+
+Net : o_led_c
+T_3_11_wire_logic_cluster/lc_1/out
+T_3_11_lc_trk_g3_1
+T_3_11_wire_logic_cluster/lc_1/in_1
+
+T_3_11_wire_logic_cluster/lc_1/out
+T_4_11_sp4_h_l_2
+T_7_7_sp4_v_t_45
+T_7_3_sp4_v_t_46
+T_7_0_span4_vert_35
+T_7_0_lc_trk_g1_3
+T_7_0_wire_io_cluster/io_0/D_OUT_0
+
+End 
+
+Net : bfn_2_11_0_
+Net : internalOscilatorOutputNet
+T_25_0_wire_smc_clk/CLK
+T_17_3_sp12_h_l_1
+T_5_3_sp12_h_l_1
+T_5_3_sp4_h_l_0
+T_8_0_span4_vert_24
+T_7_1_lc_trk_g0_0
+T_7_1_wire_logic_cluster/lc_3/clk
+
+End 
+
+Net : o_clk_out
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_13_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_13_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_13_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_13_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_13_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_12_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_2_11_wire_logic_cluster/lc_3/clk
+
+T_0_21_wire_hf_osc/CLKHF
+T_0_0_glb_netwk_4
+T_3_11_wire_logic_cluster/lc_3/clk
+
+End 
+
+Net : CONSTANT_ONE_NET
+T_1_20_wire_logic_cluster/lc_4/out
+T_0_19_lc_trk_g2_4
+T_0_21_wire_hf_osc/CLKHFEN
+
+T_1_20_wire_logic_cluster/lc_4/out
+T_0_19_lc_trk_g3_4
+T_0_21_wire_hf_osc/CLKHFPU
+
+End 
+

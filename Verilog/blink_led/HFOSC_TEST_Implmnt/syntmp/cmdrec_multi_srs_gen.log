@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2017.01\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  "D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synwork\HFOSC_TEST_comp.srs"  -osyn  "D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synwork\HFOSC_TEST_mult.srs"  -log  "D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synlog\HFOSC_TEST_multi_srs_gen.srr" 
+rc:0 success:1 runtime:0
+file:D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synwork\HFOSC_TEST_comp.srs|io:i|time:1497825397|size:2335|exec:0
+file:D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synwork\HFOSC_TEST_mult.srs|io:o|time:1497825399|size:2071|exec:0
+file:D:\Drive\Projects\Lattice FPGA\Projects\HFOSC_TEST\HFOSC_TEST_Implmnt\synlog\HFOSC_TEST_multi_srs_gen.srr|io:o|time:1497825399|size:811|exec:0
+file:C:\lscc\iCEcube2.2017.01\synpbase\bin\syn_nfilter.exe|io:i|time:1487832700|size:3128320|exec:1
+file:C:\lscc\iCEcube2.2017.01\synpbase\bin64\syn_nfilter.exe|io:i|time:1487832711|size:3947520|exec:1

@@ -1,0 +1,17 @@
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
+@W: FX689 :"c:\lscc\icecube2.2017.01\synpbase\lib\generic\sb_ice40.v":1:1:1:2|Unbuffered I/O false which could cause problems in P&R 
